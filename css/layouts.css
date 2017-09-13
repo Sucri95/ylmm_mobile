@@ -1,0 +1,25 @@
+.buscador{width:100%;height:auto;margin-top:0px;position:absolute;left:0;}
+.buscador ul{display:block!important;list-style-type:none;}
+.buscador ul li{margin:0;width:100%;min-height:7em;position:relative;}
+.buscador ul li:after{content:'';left:0;bottom:0;width:100%;height:1px;background:#ebebe7;position:absolute;}
+.buscador ul li:before{content:'';display:none;}
+.buscador ul li a{color:black;float:left;height:auto;width:100%;}
+.buscador ul li a .img-section{width:25%;height:46px;float:left;position:relative;}
+.buscador ul li a .img-section img{width:30px;height:30px;top:51%;left:50%;border-radius:50%;transform:translate(-50%, -50%);position:absolute;}
+.buscador ul li a .data-section{width:75%;height:46px;float:left;padding:0.5em 0 0 0.5em;}
+.buscador ul li a .data-section p{color:black;font-size:11px;}
+.buscador ul li a .data-section span{color:#a0a099;font-size:9px;}
+.buscador ul li:hover{color:white!important;background:#ebebe7;}
+.buscador ul li:hover a .data-section p,
+.buscador ul li:hovere a .data-section span{color:white!important;}
+.last-item{width:100%;height:3em;text-align:center;background:-webkit-linear-gradient(-45deg, #e42693 , #6e39a6);background:-ms-linear-gradient(-45deg, #e42693 , #6e39a6);padding-top:1em;}
+body > nav > ul > li:nth-child(1) > div > ul > li.last-item > a > div > p{color:white;}
+.overlay{width:100%;height:100%;position:fixed;display:block;background:rgba(0, 0, 0, 0.5);z-index:9999;}
+.overlay .container{top:50%;left:50%;width:30em;height:auto;padding:2em;position:relative;background:white;transform:translate(-50%,-50%);}
+.overlay .container .close{top:5px;right:5px;width:30px;height:30px;color:gray;padding-top:5px;font-size:16px;text-align:center;position:absolute;cursor:pointer;background:url(../../images/close.png)no-repeat;background-size:cover;}
+.slider-row3.genero .slick-slide img{display:block;width:100%;height:110px;}
+.slider-row2 .slick-dots li button:before{font-size:64px;}
+.slider-row2 .slick-dots{bottom:10px;}
+.datainfo{float:left!important;position:relative!important;width:auto!important;color:black!important;height:auto!important;margin-left:0.5em!important;margin-top:2px!important;}
+.fan,
+.musico{transition:1s;}

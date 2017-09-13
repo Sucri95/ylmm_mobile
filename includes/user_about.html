@@ -1,0 +1,91 @@
+<div class="container" style="padding-top: 0; margin-bottom: 15em;">
+  <div class="inner my-text-center">
+    <div class="inner-top">
+      <div class="login-green-bar my-center"></div>
+        <div class="social-container bands-informacion">
+    
+          <div class="text-band-container">
+            <p class="text-band">
+              <span class="show-about">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</span> 
+              <div class="btn-edit"></div>
+            </p>
+          </div>
+          
+          <div class="edit-about hidden">
+            <p><span>Comentanos sobre tus inicios</span></p>
+            <input type="hidden" name="id_musician" id="id_musician">
+            <div class="create-coment" style="height: 10.4em; width: 100%;">
+              <textarea class="user-post-area" id="setabout" name="setabout"></textarea>
+              <button class="submit_btn btn-setabout" type="submit">Finalizar</button>
+            </div>
+          </div>
+        
+        </div>
+        
+        <h4><b class="about-title">Instrumentos</b></h4>
+        
+        <div class="text-band-container instrumentos" style="margin-bottom: 2%;">
+          <p class="text-band roles">
+            <span class="show-role">GUITARRA</span> 
+            <br>
+            <div class="btn-edit-role"></div>
+          </p>
+          <div class="hidden">
+            
+            <select class="js-example-disabled-results" id="register-rol" multiple="multiple" name="role[]" data-type="string">
+            <option value="VOZ">Voz</option>
+            <option value="CORO">Coro</option>
+            <option value="PIANO">Piano</option>
+            <option value="TECLADOS">Teclados</option>
+            <option value="GUITARRA">Guitarra</option>
+            <option value="BAJO">Bajo</option>
+            <option value="BATERÍA">Batería</option>
+            <option value="PERCUSIÓN">Percusión</option>
+            <option value="CUERDA">Cuerda</option>
+            <option value="VIENTO">Viento</option>
+            <option value="OTRO">Otro</option>
+            <option value="PRODUCTOR MUSICAL">Productor musical</option>
+          </select>
+
+          <input class="input-type-1 input-type-4"  style="display: none; width: 100%;" id="cuerda" name="cuerda" placeholder="¿Qué tipo de cuerda?">
+          <input class="input-type-1 input-type-4"  style="display: none; width: 100%;" id="viento" name="viento" placeholder="¿Qué tipo de viento?">
+          <input class="input-type-1 input-type-4"  style="display: none; width: 100%;" id="otro" name="otro" placeholder="¿Cuál?">
+          <br>
+          <button id="editRoleButton" class="btn-edit-member">FINALIZAR</button>
+          </div>
+
+        </div>
+
+      <h4><b class="about-title">Géneros</b></h4>
+
+      <div class="text-band-container genres">
+        <div class="social-container genres">
+          <span class="show-genres" id="genres_container">ROCK</span>
+          <div class="btn-edit-genre"></div>
+        </div>
+
+        <div class="hidden">
+          
+          <select class="js-example-basic-multiple" multiple="multiple" data-type="string" id="register-genero" name="id_genre[]" style="margin-top: 1.3em; font-size: 14px;">
+            <option value="VOZ">VOZ</option>
+            <option value="CORO">CORO</option>
+            <option value="PIANO">PIANO</option>
+            <option value="TECLADOS">TECLADOS</option>
+            <option value="GUITARRA">GUITARRA</option>
+            <option value="BAJO">BAJO</option>
+            <option value="BATERÍA">BATERÍA</option>
+            <option value="PERCUSIÓN">PERCUSIÓN</option>
+            <option value="CUERDA">CUERDA</option>
+            <option value="VIENTO">VIENTO</option>
+            <option value="OTRO">OTRO</option>
+            <option value="PRODUCTOR MUSICAL">PRODUCTOR MUSICAL</option>
+          </select><br>
+          
+          <input class="input-type-1 input-type-4"  style="display: none; width: 100%;" id="other" name="other" placeholder="¿Cuál?">
+          
+          <button id="EditGenreButton" class="btn-edit-member" type="button">FINALIZAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

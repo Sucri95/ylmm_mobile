@@ -1,0 +1,90 @@
+.video-comment-content .comment-history-list .parent-comment .toolbox .right.options-icons,
+  .toolbox{
+    width: 8em!important;
+  }
+  
+  .toolbox .right li,
+  .right-items li{
+    float: left;
+      position: relative;
+      min-width: 1.3em!important;
+      min-height: 1.3em!important;
+      margin: 0 8%;
+  }
+
+  .toolbox{
+    float: right!important;
+  }
+
+  .video-comment-content .comment-history-list .parent-comment .toolbox ul.right li{
+    
+    padding: 0;
+    width: 1.3em;
+    height: 1.3em;
+  
+  }
+
+  .video-comment-content .comment-history-list .parent-comment .toolbox ul.right li button{
+    width: 100%!important;
+  }
+
+  .toolbox .right li a,
+  .right-items li a{
+    position: absolute;
+    width: 1.3em;
+  }
+
+  .comment-like{
+    font-size: 10px!important;
+    color: gray!important;
+    line-height: 23px!important;
+  }
+
+  div.replay-area > div > div.toolbox > ul > li:nth-child(2) {
+    width: 1.3em!important;
+    margin-top: 0.2em!important;
+}
+
+.video-area {
+    box-shadow: none!important;
+}
+
+.video-toolbar.main-toolbar{
+  padding: 0.5em 0.1em!important;
+}
+
+.comment-history-list .toolbox ul li:first-child{
+
+  margin-right: 0;
+
+}
+
+.replay-area .toolbox ul li:first-child{
+
+  margin-right: 0;
+
+}
+
+.replay-area div{
+  padding: 0 0!important;
+}
+
+@media all and (-ms-high-contrast:none)
+{
+  .comment-options.responses{
+    top: 0px;
+    right: 0px;
+  }
+}
+
+iframe{
+  min-height: 480px;
+}
+
+@media(max-width: 650px) {
+  
+  iframe{
+    min-height: 270px;
+  }
+
+}

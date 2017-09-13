@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YLMM</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/registrations.css">
+  <link rel="stylesheet" type="text/css" href="css/bandsregistration.css">
+  <link rel="stylesheet" type="text/css" href="css/plantilla.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/plantilla2.css">
+  <link rel="stylesheet" type="text/css" href="css/registro.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/ylmm-media.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/custom-select.css">
+  <link rel="stylesheet" type="text/css" href="css/ylmm.css">
+  <link rel="stylesheet" type="text/css" href="css/layouts.css">
+  <link rel="stylesheet" type="text/css" href="css/messages.css">
+
+</head>
+
+<body>
+
+  <!-- Messages Area-->
+
+  <div class="messages" id="msg1">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Debe llenar todos los campos.<br></p>
+      <div class="message-image">
+        <img  src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg2">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Debe iniciar sesión para realizar esta acción<br></p>
+      <div class="message-image">
+        <img src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages Area-->
+
+  <form id="validateSubmitForm" class="form-horizontal margin-none" action="" method="post" role="form">
+    <input type="hidden" name="rolcontaner" value="">
+    <input type="hidden" id="user_array" name="user_array">
+    <input type="hidden" id="qcuerdas" name="qcuerdas">
+    <input type="hidden" id="qvientos" name="qvientos">
+    <input type="hidden" id="qotros" name="qotros">
+    <input type="hidden" id="number_array" name="number_array">
+    <input type="hidden" id="selectedcountry" name="selectedcountry" value="">
+    <input type="hidden" id="selectedprovince" name="selectedprovince" value="">
+    
+    <div class="container">
+      <section class="login bands">
+        <div class="inner my-text-center formulario" >
+          <div class="inner-top">
+            <h1>Registro de Bandas <b>YLMM</b></h1>
+            <div class="login-green-bar my-center"></div>
+          </div>
+          <div class="form-login registro my-center">
+            <input class="input-type-1" type="text" id="name" name="name" data-type="string" required="required" placeholder="Nombre de Banda">
+            <select class="js-example-basic-multiple" multiple="multiple" data-type="string" id="register-genero" name="id_genre[]">
+              <option value="ROCK">ROCK</option>                   
+              <option value="POP">POP</option>                   
+              <option value="ELECTRONICA">ELECTRONICA</option>                   
+              <option value="FOLCLORE">FOLCLORE</option>                   
+              <option value="HIP HOP">HIP HOP</option>                   
+              <option value="JAZZ">JAZZ</option>                   
+              <option value="TANGO">TANGO</option>                   
+              <option value="REGGAE">REGGAE</option>                   
+              <option value="URBANA">URBANA</option>                   
+              <option value="HEAVY METAL">HEAVY METAL</option>                   
+              <option value="CUMBIA">CUMBIA</option>                   
+              <option value="OTRO">OTRO</option> 
+            </select><br>
+            <input class="input-type-1 input-type-4"  style="display: none;" id="other" name="other" placeholder="¿Cuál?"><br>
+            <div id="integrante" class="integrante"></div>
+            <button class="btn-purple" type="button" name="ingresar" onclick="registerBandService()"><b>FINALIZAR</b></button></br></br></br>
+            
+            <div class="bottom-back" style="position: relative;">
+              <div class="arrow-back">         
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </form>
+
+  <footer class="to-bottom base-black">
+      <ul class="footer-items">
+          <li><a href="javascript:;"><i class="icon plus"></i></a>
+          </li>
+          <li><a href="ranking.html"><i class="icon cup"></i></a>
+          </li>
+          <li><a href="index.html"><i class="icon logo"></i></a>
+          </li>
+          <li><a id="route_profile"><i class="icon user"></i></a>
+          </li>
+          <li><a href="javascript:;"><i class="icon notification"></i></a>
+          </li>
+
+      </ul>
+  </footer>
+
+
+  <div class="overlay-loader">
+      <div id="loader">
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+  </div>
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/registrations.js"></script>
+    <script type="text/javascript" src="js/searcher.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+
+</body>
+</html>

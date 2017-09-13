@@ -1,0 +1,21 @@
+.bg-photo-2{min-height:61em;}
+.bg-photo-2,
+.bg-photo-3{margin:0;border:none;background:url(../../images/resources/banners_B.png)no-repeat;background-size:cover;position:relative;-ms-overflow-y:hidden;}
+.bg-photo-3{margin:0;border:none;background:url(../../images/resources/banners_D.png)no-repeat;background-size:cover;position:relative;}
+.container-register{top:47%;left:50%;width:500px;height:auto;padding:2em 1em 0 1em;float:left;transform:translate(-50%, -50%);background:transparent;position:absolute;}
+.container-register > h3{width:100%;text-align:center;color:white;position:relative;font-weight:100;margin-bottom:2em;}
+.container-register > h3:before{content:'';width:6em;height:5px;left:50%;bottom:-105%;transform:translateX(-50%);position:absolute;background:-webkit-linear-gradient(-45deg, #e42693 , #6e39a6);background:-ms-linear-gradient(-45deg, #e42693 , #6e39a6);}
+.container-register input,
+.container-register select{outline:none;width:100%;height:52px;margin-top:1.5em;margin-bottom:0.5em;color:white;text-indent:10px;font-size:12px;background:rgba(0,0,0,0.5);box-shadow:inherit;letter-spacing:1px;border:1px solid rgba(255, 255, 255, 0.54);-moz-appearance:none;}
+.container-register select::-ms-expand{display:none;}
+.container-register option{color:black;}
+.container-register input::-webkit-input-placeholder{color:white;}
+.container-register input::-moz-placeholder{color:white;}
+.container-register input:-ms-input-placeholder{color:white;}
+.container-register input:-moz-placeholder{color:white;}
+.btn-purple{outline:none;width:100%;height:3em;margin:1.5em 0 1em 0;border:none;color:white;font-size:13px;transition:1s;cursor:pointer;background:-webkit-linear-gradient(-45deg, #6e39a6, #e42693);background:-ms-linear-gradient(-45deg, #6e39a6, #e42693);}
+.btn-purple:hover{background:-webkit-linear-gradient(-45deg, #e42693, #6e39a6);background:-ms-linear-gradient(-45deg, #e42693, #6e39a6);}
+@-moz-document url-prefix(){.container-register select{text-indent:3px!important;}
+}
+@media all and (-ms-high-contrast:none){select{padding-left:7px;}
+}

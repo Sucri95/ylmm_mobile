@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<link rel="icon" type="image/png" href="img/favicon.icon" sizes="32x32" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactList.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <style type="text/css">
+        .icon-play{
+            top: 29%;
+            right: 12.5%;
+            width: 30px;
+            height: 30px;
+            background: url(../../images/play1.png)no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        .to-left{
+            position: relative;
+        }
+        .top-toolbar{
+            height: 4.1em!important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="to-top bg-img">
+        <form class="search-form">
+            <div class="search-area to-left">
+                <i class="search-lupe to-left back-icon-area">
+                    <div class="fa fa-arrow-left hidden"></div>
+                </i>
+                <input type="text" name="" class="search-input to-left"> 
+                <i class="search-lupe to-left lupe-area">
+                    <div class="fa fa-search"></div>
+                </i>
+            </div>
+            <div class="list-menu">
+                <ul class="list column font-12 column to-left" id="append_searcher">
+                </ul>
+            </div>
+        </form>
+    </nav>
+
+    <div class="overlay-menu"></div>
+
+    <div class="container" >
+        <div class="inner-container">
+            <div class="main-container no-margin">
+                <div class="top-toolbar base-white sub-menu-toolbar" style="height: 4em;" id="title-genres">
+                    <ul style="padding:0 1em; border: 1px solid #c9c6c6;">
+                        <li class="flex-to-left">
+                            <span class="text-pink-light">Orden: <a href="javascript:;" class="text-pink-light" style="color: gray;" onclick="byAlf();">Alfabético | </a><a href="javascript:;" class="text-pink-light" style="color: gray;" onclick="byFw();">Populares</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-toolbar base-white sub-menu-toolbar" style="height: 4em;" id="title-empty">
+                    <ul style="padding:0 1em; border: 1px solid #c9c6c6;">
+                        <li class="flex-to-left">
+                            <span class="text-pink-light">¡Sé el primer participante!</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container list">
+                    <ul class="list column font-12 column to-left list-mobile" id="append_music">
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="guid">
+            <ul>
+                <li><a href="#no-letter">#</a></li>
+                <li><a href="#a">A</a></li>
+                <li><a href="#b">B</a></li>
+                <li><a href="#c">C</a></li>
+                <li><a href="#d">D</a></li>
+                <li><a href="#e">E</a></li>
+                <li><a href="#f">F</a></li>
+                <li><a href="#g">G</a></li>
+                <li><a href="#h">H</a></li>
+                <li><a href="#i">I</a></li>
+                <li><a href="#j">J</a></li>
+                <li><a href="#k">K</a></li>
+                <li><a href="#l">L</a></li>
+                <li><a href="#m">M</a></li>
+                <li><a href="#n">N</a></li>
+                <li><a href="#ñ">Ñ</a></li>
+                <li><a href="#o">O</a></li>
+                <li><a href="#p">P</a></li>
+                <li><a href="#q">Q</a></li>
+                <li><a href="#r">R</a></li>
+                <li><a href="#s">S</a></li>
+                <li><a href="#t">T</a></li>
+                <li><a href="#u">U</a></li>
+                <li><a href="#v">V</a></li>
+                <li><a href="#w">W</a></li>
+                <li><a href="#x">X</a></li>
+                <li><a href="#y">Y</a></li>
+                <li><a href="#z">Z</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="to-bottom base-black">
+        <ul class="footer-items">
+            <li><a id="wild_card" href="javascript:;"><i class="icon plus"></i></a>
+            </li>
+            <li><a href="ranking.html"><i class="icon cup"></i></a>
+            </li>
+            <li><a href="index.html"><i class="icon logo"></i></a>
+            </li>
+            <li><a id="route_profile"><i class="icon user"></i></a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="icon notification">
+                        <div class="notifications" id="msj-notification"></div>
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <div class="overlay-loader">
+        <div id="loader">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/searcher.js"></script>
+    <script type="text/javascript" src="js/musicbygenres.js"></script>
+    <script type="text/javascript" src="js/contactList.js"></script>
+    <script type="text/javascript" src="js/lib.js"></script>
+
+
+</body>
+
+
+</html>

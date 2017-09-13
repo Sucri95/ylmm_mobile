@@ -1,0 +1,1220 @@
+  .dropwall{
+    bottom: 11%!important;
+    left: 5.5%;
+    width: 13em;
+    height: auto;
+    color: white;
+    background: white;
+    position: absolute;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #b7b7b6;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    display: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 0!important;
+    transform: translateY(113%);
+  }
+
+  .dropwall.active{
+    display: block!important;
+  }
+
+  .dropwall > ul{
+    list-style-type: none;
+  }
+
+  .dropwall > ul > li{
+    padding: 1em 1em;
+    text-align: left;
+    border-bottom: 1px solid #d6d6d6;
+    border-right: 0!important;
+  }
+  .dropwall > ul > li > a:hover,
+  .dropwall > ul > div > ul > li > a:hover{
+    color: #fff;
+  }
+  body > div.top-profile-menu > ul > div > ul > li:nth-child(1){
+    border-right: none;
+  }
+
+ div.area-comment {
+    width: 100%; 
+    height: 2em;
+  }
+
+  ul.comment {
+    width: auto;
+      float: right;
+    margin-right: 1em;
+      display: inline-flex;
+      list-style-type: none;
+    text-decoration: none;
+    }
+
+  ul.comment li:not(:last-child) {
+    padding-right: 0.5em;
+  }
+  ul.comment li:not(:first-child) {
+    padding-left: 0.5em;
+    border-left: 1px solid #84847f;
+  }
+
+  ul.comment li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  ul.comment li a:hover {
+    color: #e42693;
+    transition: 1s;
+  }
+
+
+  .submit_btn.image{
+      right: 0;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0.4em 1em 0.4em 1em;
+      width: 100%;
+      position: relative;
+      float: none;
+      margin: 0 auto;
+      transition: 1s ease-in-out;
+      background: url(../../images/resources/boton_1.png)no-repeat;
+      background-size: 100% 100%;
+  }
+
+  .submit_btn.image:hover{ 
+     background: url(../../images/resources/boton_2.png)no-repeat;
+      background-size: 100% 100%;
+  }
+
+  .coments-container .create-coment  textarea{
+    height: 3em!important;
+  }
+
+  .coments-container .coment-list .coment-post{
+    height: auto!important;
+  }
+
+
+  .coments-container .create-coment{
+    height: 8em;
+  }
+
+  input[type="file"] {
+    display: none;
+  } 
+
+  .overlay,
+  .overlay-img,
+  .addmember_overlay {
+    width: 100%;
+      height: 100%;
+      position: fixed;
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      margin-top: -3em;
+  }
+
+  .overlay .container,
+  .overlay-img .container,
+  .addmember_overlay .container {
+    top: 50%;
+      left: 50%;
+      width: 30em;
+      height: auto;
+      padding: 2em 1em 1em 1em;
+      position: relative;
+      background: white;
+      transform: translate(-50%,-50%);
+      z-index: 200;
+  }
+  
+  .overlay.active,
+  .overlay-img.active,
+  .addmember_overlay.active {
+    display: block!important;
+    cursor: pointer;
+  }
+
+  .addmember_overlay{
+    margin-top: 0px!important;
+    top: 0!important;
+  }
+
+  .addmember_overlay .container{
+    width: 110%!important;
+  }
+
+.like-band {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%,0%);
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer!important;
+    background: url(../../images/resources/like_off.png)no-repeat!important;
+    background-size: 100% 100%!important;
+}
+.like-band.active {
+    background: url(../../images/resources/like_on.png)no-repeat!important;
+    background-size: 100% 100%!important;
+}
+
+
+.create-comment {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer!important;
+    background: url(../../images/resources/comment.png)no-repeat!important;
+    background-size: 100% 100%!important;
+}
+
+.share-band {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%!important;
+    height: 100%!important;
+    cursor: pointer!important;
+    position: absolute!important;
+    background: url(../../images/share.png)no-repeat!important;
+    background-size: 100% 100%!important;  
+    
+}
+
+.share-band:hover {
+  background: url(../../images/share-active.png)no-repeat!important;
+  background-size: 100% 100%!important;
+   
+}
+
+  .overlay-msg .container,
+  .overlay .container,
+  .overlay-img .container,
+  .addmember_overlay .container {
+    position: relative;
+  }
+
+  .overlay-msg .container .close,
+  .overlay .container .close,
+  .overlay-img .container .close,
+  .close-v,
+  .close-member {
+      
+      top: 5px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      color: gray;
+      padding-top: 5px;
+      font-size: 16px;
+      text-align: center;
+      position: absolute;
+      cursor: pointer;
+      background: url(../../images/close.png)no-repeat;
+      background-size: cover;
+  }
+
+  .img-container,
+  .video-container{
+    width: 100%!important;
+    max-width: 84em;
+    height: 100%;
+    max-height: 15em;
+    /*border: 1px solid #ebebe7;*/
+    padding: 1em;
+    /*overflow-y: scroll; */
+    display: none;
+  } 
+
+  .video-container.addVideos {
+    display: block;
+    overflow-y: inherit;
+    max-height: 100%;
+    border: 1px solid transparent;
+  }
+
+
+  .img-container img,
+  .video-container video {
+    float: left;
+    margin: 10px;
+  }
+
+  .submit_btn{
+    right: 103px;
+    bottom: 0;
+    float: right;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 0.4em 1em 0.4em 1em;
+  
+  }
+
+  body > div.coments-container.my-center > div > div > div.post-data > div.slider-video > a > img{
+    width: 480px!important;
+    height: 360px!important;
+    opacity: 0.5;
+  }
+
+  body > div.coments-container.my-center > div > div > div.post-data > div.slider-video > a > img.icon-play{
+    width: 80px;
+    height: 80px;
+    background: url(../../images/play1.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 23%;
+    top: 38%;
+  }
+
+  /*iframe{
+    width: 480px;
+    height: 360px;
+      
+  } */
+
+  div.upload-more {
+    width: 10em;
+    height: 10em;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    background: white;
+    position: relative;
+    border: 6px #ebebe7 dotted;
+  }
+
+  div.upload-more .icon-plus {
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: url(../../images/plus-icon.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+
+  .icon-play{
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: url(../../images/play1.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .legend{
+    
+    font-size: 8px; 
+    font-size: 9px; 
+    margin-top: 6px; 
+    margin-bottom: 26px; 
+    letter-spacing: 1px; 
+    line-height: 14px;
+  }
+
+  body > div.coments-container.my-center > div:nth-child(6) > div > div.post-data > div.slider-video > a > iframe,
+  body > div.coments-container.my-center > div:nth-child(6) > div > div.post-data > div.slider-video > a > img,
+  body > div.coments-container.my-center > div:nth-child(4) > div > div.post-data > img{
+
+    width: 480px;
+    height: 377px;
+    margin-top: 3em;
+
+  }
+
+/* .editresponse > div,
+ .respuesta2 > div,
+ .respuestacomentario > div{
+    margin-top: 4em;
+    margin-left: 2.5em;
+
+  }
+.editresponse > div > textarea,
+.respuesta2 > div > textarea,
+.respuestacomentario > div > textarea{
+  width: 27.5em!important;
+}
+
+.editresponse > div > button{
+  left: 61.3em;
+}
+
+.respuesta2 > div > button,
+.respuestacomentario > div > button{
+  left: 22.5em;
+}
+*/
+.addthis_inline_share_toolbox.active{
+  margin-left: 1em!important;
+  margin-top: 2px!important; 
+}
+.addthis_inline_share_toolbox{
+  display: none;
+}
+
+.avatar-area{
+
+  height: auto!important;
+    margin-right: 1em!important;
+
+}
+body > div.coments-container.my-center > div > div > div.post-data{
+  height: auto!important;
+    width: auto!important;
+}
+
+#\31 01_1{
+  margin-left: 6em;
+}
+
+.iframecontaner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay-icon-play {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 24, 24, 0.8);
+  position: absolute;
+}
+
+.boton{
+    bottom: -3px;
+    width: 1em;
+    height: 1em;
+    color: #e42693;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    background: url(../../images/arrow-bottom.png)no-repeat;
+    background-size: cover;
+    transform: translate(-50%,-50%);
+    padding-top: 0.3em;
+    right: 0;
+}
+
+.dropdown-options{
+
+    right: 3px;
+    top: 17px;
+    display: none;
+    list-style-type: none;
+    padding: 0 4px;
+    border: 1px solid #dedede;
+    width: 92px;
+    height: 58px;
+    z-index: 9999;
+    text-align: left;
+    margin: 0em 0 0 1em;
+    position: absolute;
+    box-shadow: 1px 1px 1px 1px #ebebe7;
+}
+
+.dropdown-options.active{
+  display: block;
+}
+
+
+.dropdown-options li{
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 6px;
+
+}
+.dropdown-options li:not(:last-child){
+  border-bottom: 1px solid #ebebe7;
+}
+
+.dropdown-options li:hover a {
+  color: #6ac146;
+}
+
+.dropdown-options li a{
+  color: black;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 12px;
+}
+
+.options{
+
+  position: relative;
+}
+
+.edit-comment,
+.edit-response {
+  display: none;
+}
+
+.edit-response.active,
+.edit-comment.active {
+  display: block;
+}
+
+.hidde {
+  display: none;
+}
+
+.footer-post{
+    float: left;
+    width: 100%;
+    height: 2.7em;
+}
+
+.timer{
+  top: 54%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  display: none;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+ .edit-avatar{
+
+    width: 100%;
+    height: 100%;/*
+    background: rgba(0, 0, 0, 0.5);*/
+    position: relative;
+
+  }
+
+  .container-avatar {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .container-avatar.active {
+    display: block;
+    transition: 1;
+  }
+
+  .edit-avatar{
+    width: 100%;
+    height: 100%;
+  }
+
+  .edit-avatar.image{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /*background: url(../../images/white_camara.png)no-repeat;*/
+    background-size: cover; 
+  }
+ .update-background {
+    width: auto;
+    height: 3em;
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    float: left;
+    padding:5.5px;
+    cursor: pointer;
+  }
+  .background-legend {
+
+    transition: 0s!important;
+    width: auto;
+    height: 3em;
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
+    float: right;
+    padding: 5.5px;
+
+  }
+
+  .background-legend.active{
+    background: rgba(0,0,0,0.5);
+  }
+
+  body > div.container > div > div.background-legend > p,
+  body > div.container > div > div.update-background > p {
+    color: white;
+    float: left;
+    display: none;
+    margin:0.45em 0 0 0;
+  }
+
+  body > div.container > div > div.update-background > img {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-right: 1em;
+  }
+
+
+  .update-background.active {
+    border: 2px solid white;
+    background: rgba(0,0,0,0.5);
+  }
+  
+   body > div.container > div > div.background-legend.active > p ,
+   body > div.container > div > div.update-background.active > p {
+    display: block;
+  }
+  .slider-type-2{
+    position: relative;
+    overflow: hidden;
+  }
+
+
+/* --------------------------------------------------------------------------------------------------- */
+/* CSS Wall Pedro */
+/* --------------------------------------------------------------------------------------------------- */
+
+  *, html, body {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .wall-container {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 0em;
+    position: relative;
+  }
+
+  .wall-container .inner-container {
+    width: 1290px;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 0em;
+    padding: 3em 0 0 0;
+  }
+
+  .wall-area{
+    border: 1px solid #ebebe7;
+    min-height: 7em;
+  }
+
+  .video-area {
+    border: 1px solid #ebebe7;
+    min-height: 13em;
+  }
+
+  .wall-area{
+    float: left;
+    width: 854px;
+    background: white;
+    margin-bottom: 5em;
+    /* border: 1px solid transparent; */
+    box-shadow: 1px 1px 1px 1px #dbdbdb;
+  }
+/*
+  .wall-area .main-post{
+    width: 100%;
+    height: 100%;
+    float: left;
+  }*/
+
+  .wall-area .main-post .top{
+    width: 100%;
+    height: 2em;
+    padding: 0.4em 3px;
+    background: #f6f7f9;
+    border-bottom: 1px solid transparent;
+  }
+
+  .wall-area .main-post .top ul{
+    width: auto;
+    float: right;
+    display: inline-block;
+  }
+  .wall-area .main-post .top ul li{
+    float: right;
+    padding: 0 0.4em;
+    position: relative;
+  } 
+
+  .wall-area .main-post .top ul li:not(:first-child):after{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #ebebe7;
+    position: absolute;
+  }
+
+  .wall-area .main-post .top ul li a{ 
+    color: #afaaaa;
+    font-size: 12px;
+  }
+
+  .wall-area .main-post .top ul li a:hover{
+    color: #e42693;
+  }
+
+  .wall-area .main-post .post-area  {
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #ebebe7;
+
+  }
+
+  .wall-area .main-post .post-area .user-area{
+    width: 10%;
+    height: 7em;
+    float: left;
+    background: #f6f7f9;
+    border-right: 1px solid #ebebe7;
+    position: relative;
+  }
+
+  .wall-area .main-post .post-area .user-area .avatar{ 
+    top: 40%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 1px solid #ebebe7;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .main-post .post-area .input-area{
+    width: 90%;
+    height: 2em;
+    float: left;
+    background: #f6f7f9;
+    border: transparent;
+    border-bottom: transparent;
+    border-top: transparent
+  }
+
+  .wall-area .main-post .post-area .input-area textarea{ 
+     width: 747px;
+    height: 100%;
+    resize:  none;
+    outline: none;
+    padding: 0.5em;
+    border: 1px solid white;
+    overflow: auto;
+  }
+
+  .wall-area .main-post .post-area .tool-bar{
+    width: 100%;
+    height: 3em;
+    float: left;
+    padding: 0.8em 1.2em;
+    box-shadow: none;
+    background: #f6f7f9;
+    
+  }
+  .wall-area .main-post .post-area .tool-bar button.btn-publicar{ 
+    width: 80px;
+    height: 25px;
+    color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    background: url(../../images/resources/boton_1.png)no-repeat;
+    background-size: 100% 100%;
+    font-size: 11px;
+
+  }
+
+  .wall-area .main-post .post-area .tool-bar button.btn-publicar:hover{ 
+    background: url(../../images/resources/boton_2.png)no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .wall-area .history-post {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 1px;
+    /*min-height: 30em;*/
+  }
+
+  .wall-area .history-post .post-item {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 6em;
+    background: #f6f7f9;
+  }
+
+  .wall-area .history-post .post-item .user-area {
+    width: 100%;
+    height: 5em;
+    float: left;
+    padding: 0.7em 1em 1em 1.2em;
+    background: #f6f7f9;  
+    position: relative;
+    z-index: 2;
+  }
+
+  .wall-area .history-post .post-item .user-area .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .history-post .post-item .user-area .data {
+    float: left;
+    padding-left: 0em;
+    width: 100%;
+    max-width: 15em;
+  }
+
+  .wall-area .history-post .post-item .user-area .data h1{
+    line-height: 10px;
+  }
+
+
+  .wall-area .history-post .post-item .user-area .data h1 a{
+    color: #01b1e6;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .wall-area .history-post .post-item .user-area .data p  {
+    color: #afaaaa;
+    font-size: 10px;
+    line-height: 22px;
+  }
+
+  .wall-area .history-post .post-item .user-post {
+    width: 100%;
+    float: left;
+    min-height: 4em;
+    overflow: hidden;
+    border-top: 1px solid #e2e2e2;
+  }
+
+  .wall-area .history-post .post-item .user-post .media-post{
+    height: auto; 
+    /*max-height: 40em;*/
+    overflow: hidden;
+  }
+
+  .wall-area .history-post .post-item .user-post .post-content{ 
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid transparent;
+    height: auto;
+  }
+  .wall-area .history-post .post-item .user-post .post-content span{
+    line-height: 22px;
+    font-size: 12px;
+    margin-left: 0.2em;
+  }
+
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar,
+  .wall-area .history-post .post-item .user-post .tool-bar{
+    width: 100%;
+    height: 3em;
+    float: left;
+    padding: 0.8em 0;
+    box-shadow: none;
+    background: #f6f7f9;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul,
+  .wall-area .history-post .post-item .user-post .tool-bar ul{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .wall-area .history-post .post-item .user-post .tool-bar ul {
+    padding: 0 8px;
+    width: auto;
+    float: right;
+  }
+  @-moz-document url-prefix() {
+    .wall-area .history-post .post-item .user-post .tool-bar ul {
+      padding: 0 4px;
+    }
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li{
+    float: right;
+    position: relative;
+  }
+
+  .wall-area .history-post .post-item .user-post .tool-bar ul li{
+    min-width: 1.3em;
+    min-height: 1.3em;
+    margin: 0 2%;
+  }
+  
+  .btn-edit-post,
+  .btn-edit-response{
+    height: 21px!important;
+    width: 80px!important;
+    position: relative;
+    font-size: 11px!important;
+    margin-top: 5px!important;
+    color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+    padding-top: 2px;
+    transition: 1s ease-in-out;
+    background: url(../../images/resources/boton_1.png)no-repeat;
+    background-size: 100% 100%;
+    border-radius: 4px!important;
+
+  } 
+
+  .btn-edit-post:hover,
+  .btn-edit-response:hover{
+    background: url(../../images/resources/boton_2.png)no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .btn-edit-post .edit-a,
+  .btn-edit-response .edit-a{
+    color: white!important;
+    font-size: 11px!important;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute!important;
+    line-height: 0px;
+  }
+
+
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li a,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li a {
+    color: #afaaaa;
+  }
+
+  .wall-area .history-post .post-item .user-post .tool-bar ul li a.comment-band{
+    font-size: 12px;
+    text-align: right;
+    line-height: 35px;
+  }
+
+
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li:not(:first-child):after,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li:not(:first-child):after{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment {
+    width: 91%;
+    height: auto;
+    min-height: 3em;
+    float: right;
+    display: none;
+    background: #f6f7f9;
+    margin-bottom: 2em;
+    position: relative;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment.active {
+    display: block;
+    border-left: 1px solid #e6dfdf!important;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    padding: 0.5em;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid  #e6dfdf;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li .avatar{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0em 0.5em;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li span a{
+    color: #01b1e6;
+    /*float: left;*/
+    font-size: 12px;
+    margin-left: 0em;
+  }
+  .wall-area .history-post .post-item .user-post .list-comment  ul li span {
+    font-size: 10px;
+    line-height: 30px;
+    margin-left: 0.2em;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area {
+    height: auto;
+    float: left;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .text-area {
+    width: 90.5%;
+    height: 4em;
+    float: left;
+    margin-top: 0em;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .text-area.responses {
+    width: 89.65%;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .text-area textarea{ 
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 0.5em;
+    overflow: auto;	
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li {
+    width: auto;
+    border: none;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li a{ 
+    width: 80px!important;
+      height: 25px!important;
+      color: white;
+      border: none;
+      float: right;
+      cursor: pointer;
+     line-height: 26px;
+      font-size: 12px;
+      text-align: center;
+      transition: 1s ease-in-out;
+      background: url(../../images/resources/boton_1.png)no-repeat;
+      background-size: 100% 100%;
+      font-size: 11px;
+  }
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li a:hover {
+    background: url(../../images/resources/boton_2.png)no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar {
+    padding: 0.5em 0;
+    background: transparent;
+    border-top: 1px solid #ebebe7;
+  }
+  
+  .wall-area .history-post .post-item .user-post .list-comment  ul li .media-post{
+    width: 100%;
+    height: 390px;
+    float: left;
+    color: white;
+    text-align: center;
+    background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);  
+  }
+
+  .tool-bar.comment {
+    padding: 0!important;
+    margin-top: 1em;
+  }
+
+  .tool-bar.comment ul li {
+    float: right!important;
+    width: auto!important;
+    border: none!important;
+  }
+
+
+  .comment-options {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 26px;
+    cursor: pointer;
+    background: url(../../images/arrow-bottom.png)no-repeat;
+    background-size: 10px;
+    background-position-x: 17px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .comment-options ul {
+    width: 100px;
+      height: auto;
+      float: right;
+      margin-top: 1.2em;
+      background: white;
+      display: none;
+      box-shadow: 1px 1px 1px 1px #ebebe7;
+  }
+  
+  .comment-options ul li {
+    width: 100%;
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ebebe7;
+  
+  }
+
+  .comment-options ul li:hover { 
+    background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);
+  }
+  
+  .comment-options ul li:hover a{
+    color: white;
+  }
+
+  .comment-options ul li a{
+    font-size: 12px;
+    color: #afaaaa;
+
+  }
+
+  .active {
+    display: block!important;
+  }
+  .hidde {
+    display: none!important;
+  }
+
+  textarea.edit-post {
+    width: 99.5%;
+    height: auto;
+    /* min-height: 18em; */
+    resize: none;
+    outline: none;
+    padding: 0.5em;
+    margin: 5px;
+    border: 1px solid #ebebe7;
+    font-size: 12px;
+    overflow: auto;
+  }
+
+  /*------------------------------------------------------------*/
+
+  .video-area{
+    float: left;
+    width: 416px;
+    /*margin-left: 20px;*/
+    border: 1px solid transparent;
+    /* box-shadow: 1px 1px 1px #b3b3b3;*/
+  }
+
+  .wall-container .inner-container .video-area{ 
+    padding: 1em;
+    /*height: auto;*/
+  }
+
+  .post-new-coment a {
+    margin-right: -16px;
+  }
+
+  .user-name.header {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 3em 0 4em 0;
+  }
+
+
+.wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar {
+  border: 1px solid transparent!important;
+}
+
+input.input-edit {
+  width: 100%;
+  height: 2em;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid #c1c1bf;
+  box-shadow: 1px 1px 1px transparent;
+  max-width: 16em;
+}
+
+.list-comment.active .tool-bar.comment ul,
+.post-new-coment,
+.list-comment.active .comment-post-area .tool-bar ul{
+  padding: 0!important;
+}
+
+@-moz-document url-prefix() {
+  .comment-options.responses{
+    top: 10px!important;
+    right: 10px!important;
+  }
+}
+
+@media(max-width: 650px){
+  textarea.edit-post.text-edit{
+    width: 98%;
+    margin-left: 7px;
+  }
+  .wall-area .main-post .post-area .tool-bar button.btn-publicar{
+    margin-top: 12px;
+  }
+}
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+  .submit_btn.image,
+  .submit_btn{
+    font-weight: 400;
+  }
+}

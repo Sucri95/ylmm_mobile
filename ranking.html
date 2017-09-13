@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link rel="icon" type="image/png" href="img/favicon.icon" sizes="32x32" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ranking.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+
+</head>
+
+<body>
+    
+
+    <nav class="to-top bg-img">
+        <form class="search-form">
+            <div class="search-area to-left">
+                <i class="search-lupe to-left back-icon-area">
+                    <div class="fa fa-arrow-left hidden"></div>
+                </i>
+                <input type="text" name="" class="search-input to-left"> 
+                <i class="search-lupe to-left lupe-area">
+                    <div class="fa fa-search"></div>
+                </i>
+            </div>
+            <div class="list-menu">
+                <ul class="list column font-12 column to-left" id="append_searcher">
+                </ul>
+            </div>
+        </form>
+    </nav>
+
+    <div class="overlay-menu"></div>
+        
+    
+    <div class="container">
+        <div class="inner-container">
+            <div class="chart-ylmm">
+
+                <!-- Music Performance -->
+                <div id="artists_searcher" class="container-chart">
+                    <div class="header">
+                        <h2><span>Conocé la performance de los artistas</span></h2>
+                    </div>
+                    <div class="container-clasificados container-buscador" style="min-height: 5em;">
+                        <div class="buscador">
+                            <form accept-charset="UTF-8" action="/" id="site-search-form" class="site-search-form" method="post" autocomplete="off">
+                                <input class="search-text-input" maxlength="128" name="search_block_form" placeholder="Buscar..." size="0" type="text" value="">
+                                <button class="form-submit" name="op" type="submit" disabled="disabled">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <input name="form_id" type="hidden" value="search_block_form">
+                            </form>
+                            <div class="search-list">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Music Performance -->
+
+                <!-- Clasificated Artists -->
+                <div id="artistas_clasificados" class="container-chart" style="margin-top: 2%;">
+                    <div class="header">
+                        <h2><span> Artistas clasificados</span></h2>
+                    </div>
+                    <div class="container-chart-clasificados">
+                        <ul>
+                            <li class="clasificados" style="margin-right: 2%;">
+                                <div>
+                                    <h2>Artistas <br> clasificados</h2>
+                                </div>
+                            </li>
+                            <li style="border-right: 1px solid #ebebe7;">
+                                <div>
+                                    <h2>Corte X</h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Clasificated Artists -->
+
+                <!-- Top 10 Clasificated Songs -->
+                <div id="clasificated_songs" class="container-chart" style="margin-top: 2%;">
+                    <div class="header" id="header_clasificated_songs">
+                        <h2> <span>Las 10 canciones clasificadas</span> </h2>
+                    </div>
+                    
+                </div>
+                <!-- Top 10 Clasificated Songs -->
+
+                <!--Top 10-->
+                <div id="top_10" class="container-chart" style="margin-top: 2%;">
+                    <div class="header" id="header_top10">
+                        <h2><span>Top 10 de artistas</span> </h2>
+                    </div>
+                </div>
+                <!--Top 10-->
+
+                <!-- Artists con mas followers -->
+                <div id="artists_followers" class="container-chart" style="margin-top: 2%;">
+                    <div class="header" id="header_artists_followers">
+                        <h2><span> Top 10 de followers </span></h2>
+                    </div>
+                    <div class="top-follows">
+                        <ul id="append_followersA"></ul>
+                    </div>
+                </div>
+                <!-- Artists con mas followers -->
+
+                <!-- Fans con mas followers -->
+                <div id="fans_followers" class="container-chart" style="margin-bottom: 4%; margin-top: 2%;">
+                    <div class="header" id="header_fans_followers">
+                        <h2><span> Top 10 de fans </span></h2>
+                    </div>
+                    <div class="top-follows">
+                        <ul id="append_followersF"></ul>
+                    </div>
+                </div>
+                <!-- Fans con mas followers -->
+            
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="to-bottom base-black">
+        <ul class="footer-items">
+            <li><a id="wild_card" href="javascript:;"><i class="icon plus"></i></a>
+            </li>
+            <li><a href="ranking.html"><i class="icon cup active"></i></a>
+            </li>
+            <li><a href="index.html"><i class="icon logo"></i></a>
+            </li>
+            <li><a id="route_profile"><i class="icon user"></i></a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="icon notification">
+                        <div class="notifications" id="msj-notification"></div>
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <div class="overlay-loader">
+        <div id="loader">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/searcher.js"></script>
+    <script type="text/javascript" src="js/ranking.js"></script>
+    <script type="text/javascript" src="js/lib.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YLMM</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/plantilla.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/plantilla2.css">
+  <link rel="stylesheet" type="text/css" href="css/registro.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/ylmm-media.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/custom-select.css">
+  <link rel="stylesheet" type="text/css" href="css/messages.css">
+
+
+  <style type="text/css">
+    
+    input.error,
+    select.error  {
+      border: 1px solid #ff3131!important;
+    }
+
+    input.success,
+    select.success {
+      border: 1px solid #6bff6b!important;
+    }
+
+  footer {
+      display: none;
+  }
+
+  .select2.select2-container.select2-container--default{
+    font-size: 12px;
+  }
+
+  .container-register{
+    top: 0!important;
+      left: 0!important;
+      float: none!important;
+      transform: none!important;
+      float: none!important;
+      margin: 4em auto!important;
+      position: relative!important;
+  }
+  .select2-selection__rendered{
+    margin-left: 0!important;
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+      font-size: 12px!important;
+      width: 100%;
+      margin: 0.2em 0.5em!important;
+      border-radius: 4px!important;
+      padding-right: 2em!important;
+  }
+
+  .select2-container--default .select2-search--inline .select2-search__field,
+  .input-type-1{
+    caret-color: transparent;
+  }
+  
+  .select2-container--default .select2-selection--multiple,
+  .select2-container--default.select2-container--focus .select2-selection--multiple {
+    margin-top: 0px!important;
+  }
+
+  input::-moz-placeholder { 
+    color:white!important; background-color:rgba(0,0,0,0);  
+    opacity: 1;
+  }
+  input#input-buscador::-moz-placeholder { 
+    color:#757575!important; background-color:white;  
+      opacity: 1;
+  }
+
+  @-moz-document url-prefix() {
+
+  nav .items ul.main-menu li:nth-child(1) ul.user-sub-menu{
+    margin-top: 7.5px!important;
+  }
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="super-container bg-photo-2">  
+    <!-- Opacidad -->
+    <div class="black-overlay"></div>
+    <!-- Opacidad -->
+    
+    <div class="container-register">
+      
+      <h3>Registro de Músico <b>YLMM</b></h3>
+        
+        <input type="text" name="name" placeholder="Nombre Artistico" data-type="string" id="name" class="placeholder-color">
+        
+        <select class="js-example-disabled-results" id="register-genero" name="id_genre[]" multiple="multiple" data-type="string">
+          <option value="ROCK">ROCK</option>                   
+          <option value="POP">POP</option>                   
+          <option value="ELECTRONICA">ELECTRONICA</option>                   
+          <option value="FOLCLORE">FOLCLORE</option>                   
+          <option value="HIP HOP">HIP HOP</option>                   
+          <option value="JAZZ">JAZZ</option>                   
+          <option value="TANGO">TANGO</option>                   
+          <option value="REGGAE">REGGAE</option>                   
+          <option value="URBANA">URBANA</option>                   
+          <option value="HEAVY METAL">HEAVY METAL</option>                   
+          <option value="CUMBIA">CUMBIA</option>                   
+          <option value="OTRO">OTRO</option>
+        </select>
+
+        <input class="input-type-1 input-type-4"  style="display: none;" id="other" name="other" placeholder="¿Cuál?">
+
+        <select class="js-example-disabled-results" id="register-rol" multiple="multiple" name="role[]" data-type="string">
+          <option value="VOZ">VOZ</option>
+          <option value="CORO">CORO</option>
+          <option value="PIANO">PIANO</option>
+          <option value="TECLADOS">TECLADOS</option>
+          <option value="GUITARRA">GUITARRA</option>
+          <option value="BAJO">BAJO</option>
+          <option value="BATERÍA">BATERÍA</option>
+          <option value="PERCUSIÓN">PERCUSIÓN</option>
+          <option value="CUERDA">CUERDA</option>
+          <option value="VIENTO">VIENTO</option>
+          <option value="OTRO">OTRO</option>
+          <option value="PRODUCTOR MUSICAL">PRODUCTOR MUSICAL</option>
+        </select>
+
+        <input class="input-type-1 input-type-4"  style="display: none;" id="cuerda" name="cuerda" placeholder="¿Qué tipo de cuerda?">
+        <input class="input-type-1 input-type-4"  style="display: none;" id="viento" name="viento" placeholder="¿Qué tipo de viento?">
+        <input class="input-type-1 input-type-4"  style="display: none;" id="otro" name="otro" placeholder="¿Cuál?">
+
+        
+        <button class="btn-purple" onclick="registerMusicianService()">REGISTRARME</button>
+
+      <div class="bottom-back" style="position: relative;">
+        <div class="arrow-back">         
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer class="to-bottom base-black">
+      <ul class="footer-items">
+          <li><a href="javascript:;"><i class="icon plus"></i></a>
+          </li>
+          <li><a href="ranking.html"><i class="icon cup"></i></a>
+          </li>
+          <li><a href="index.html"><i class="icon logo"></i></a>
+          </li>
+          <li><a id="route_profile"><i class="icon user"></i></a>
+          </li>
+          <li><a href="javascript:;"><i class="icon notification"></i></a>
+          </li>
+
+      </ul>
+  </footer>
+
+
+  <div class="overlay-loader">
+      <div id="loader">
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/searcher.js"></script>
+    <script type="text/javascript" src="js/musicianregistration.js"></script>
+
+
+</body>
+</html>

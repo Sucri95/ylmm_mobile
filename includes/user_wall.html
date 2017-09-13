@@ -1,0 +1,96 @@
+<div class="overlay">
+  <div class="container">
+    <div class="close-v"></div>
+    <h4>Cargar Video</h4>
+     <form id="validateSubmitForm" action="/videoWall" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id_user">
+        <input type="hidden" name="id_wall">
+          
+            <input class="input-type-1" type="text" name="title" id="title" placeholder="Escribí el título del/ los video/ s..." autocomplete="off" style="width: 100%;">
+            <div class="video-container"></div>
+            <div class="timer">
+              <div class="loader">
+            <svg class="circular-loader" viewBox="25 25 50 50" >
+                <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#e42693" stroke-width="2" />
+            </svg>
+              </div>
+            </div>
+            <input type="text" id="array_video" name="array_video" style="display: none;">
+
+            <input class="load_vid" id="upload_video" type="file" accept="video/*" name="video" style="display: none;" size="20"><br/>
+
+            <button class="submit_btn image" type="submit" >publicar</button>
+
+      </form>
+  </div>
+</div>
+
+
+<div class="overlay-img">
+  <div class="container">
+    <div class="close"></div>
+      <h4>Cargar Imágenes</h4>
+        <form method="POST" action="/multipictures" enctype="multipart/form-data">
+            <input type="hidden" name="id_wall">
+            <input type="hidden" name="id_user">
+            <input class="input-type-1" type="text" name="title" id="title" placeholder="Escribí el título de la/ s imágen/ es..." autocomplete="off" style="width: 100%;">
+            <div class="img-container"></div>
+              <div class="timer">
+                <div class="loader">
+          <svg class="circular-loader" viewBox="25 25 50 50" >
+            <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#e42693" stroke-width="2" />
+          </svg>
+                </div>
+              </div>
+            <input type="text" id="array" name="array" style="display: none;">
+            <input class="load_img" type="file" id="load_img" accept="image/*" name="picture[]" multiple style="display: none;" size="20"><br/>
+          <button class="submit_btn image" type="submit" >publicar</button>
+        </form>
+  </div>
+</div>
+
+<div class="wall-container">
+  <div class="inner-container">
+    <div class="wall-area">
+      <div class="main-post">
+        <div class="top">
+          <ul>
+          <li class="upload-images"><a href="javascript:;">IMÁGENES</a></li>
+          <li class="upload-videos"><a href="javascript:;">VIDEOS</a></li>
+          </ul>
+        </div>
+        <div class="post-area">
+          
+          <div class="user-area">
+            <div class="avatar" id="auth_profile_pic"></div>
+            <input id="profile_pic" class="hidden">
+          </div>
+          
+          <div class="input-area">
+            <textarea class="main-textarea" name="comment"></textarea>
+          </div>
+
+        <input type="hidden" class="id_user" name="id_user">
+        <input type="hidden" class="id_wall" name="id_wall">
+        <input type="hidden" id="username" name="username">
+            
+          <div class="tool-bar">
+            <button class="btn-publicar">PUBLICAR</button>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="video-area" style="margin-left: 20px;">
+      <div class="header">
+        <p id="title_slide">MI MÚSICA FAVORITA</p>
+      </div>
+      <div class="related-area" style="width: 100%;">
+        <ul id="video_list">
+          <li class="last-item-video" id="last-item-video"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+.load-avatar{
+      width: 130px;
+      height: 120px;
+      background: #ebebe8;
+      border-radius: 50%;
+      border: 3px solid #e42693;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .load-avatar h6{
+      top: 33%;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+      font-size: 19px;
+      font-weight: bold;
+      color: gray;
+    }
+   
+   .js-example-basic-multiple,
+   .js-example-basic-multiple2,
+  .select2-container--default .select2-selection--multiple{
+    width: 422px;
+    height: 56px!important;
+    text-indent: 10px;
+    min-width: 16em;
+    border-radius: 0px;
+    margin-top: 0px!important;
+    color: white;
+    border: 1px solid #fff!important;
+    background: rgba(0,0,0,0.2);
+  }
+
+  #validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > div > span,
+  #validateSubmitForm > div > section > div > div.form-login.registro.my-center > span:nth-child(3){
+
+    width: 422px!important;
+    
+  }
+
+
+.select2-container--default .select2-search--inline .select2-search__field{      
+    left: 8px;
+    position: absolute;
+}
+
+.boton{
+    top: -30px;
+    right: 4%;
+    width: 1em;
+    height: 1em;
+    color: #e42693;
+    cursor: pointer;
+    text-align: center;
+    background: url(../../images/plus-icon.png)no-repeat;
+    background-size: cover;
+    transform: translate(-57%,-28%);
+    position: absolute;
+
+   
+}
+
+#validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > span {
+  width: 422px!important;
+}
+
+.integrante,
+.contenedor{
+    float: none;
+    margin: 0 auto;
+    margin-top: -6em!important;
+    width: 422px!important;
+    position: relative;
+    margin-bottom: 1em;
+    margin-top: -1em!important;
+ 
+
+}
+
+#validateSubmitForm div section div div.form-login.registro.my-center div div.buscador ul li{
+  border-bottom: 1px solid rgba(41, 41, 29, 0.24);
+}
+
+#validateSubmitForm div section div div.form-login.registro.my-center div div.buscador ul li a{
+  top: 0;
+  left: 0;
+  transform: none;
+}
+#validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > div.contenedor > span > span.selection > span > ul > li > input,
+#validateSubmitForm > div > section > div > div.form-login.registro.my-center > span > span.selection > span > ul > li > input{
+  font-size: 12px!important;
+    margin-top: 1em!important;
+}
+
+.form-login.registro a {
+    color: white!important;
+    position: relative!important;
+    text-decoration: none!important;
+    transform: translate(-50%, 50%)!important;
+    border-bottom: 1px solid!important;
+  }
+
+  .buscador-integrantes {
+    width: 30em!important;
+    margin: 0 auto;
+  }
+ 
+  .buscador.buscador-integrantes > ul > li{
+    min-height: 3.3em;
+    border-bottom: none!important;
+  }
+
+  .buscador.buscador-integrantes > ul > li > a {
+    transform: inherit!important; 
+    border-bottom: none!important; 
+  }
+
+
+#validateSubmitForm div.inner-top  h1 {
+  color: white;
+}
+
+ .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #000000;
+ }
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+  .load-avatar h6{
+    font-weight: 400;
+  }
+}

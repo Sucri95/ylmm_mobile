@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YLMM</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="icon" type="image/png" href="../../images/favicon.ico" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/plantilla.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/plantilla2.css">
+  <link rel="stylesheet" type="text/css" href="css/registro.css">
+  <link rel="stylesheet" type="text/css" href="css/components.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/ylmm-media.css">
+  <link rel="stylesheet" type="text/css" href="css/messages.css">
+
+</head>
+
+<body>
+
+  <!-- Messages Area-->
+
+  <div class="messages" id="msg1">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Este Email ya ha sido registrado. Por favor, intente con otro diferente.<br></p>
+      <div class="message-image">
+        <img  src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg2">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Debe llenar todos los campos.<br></p>
+      <div class="message-image">
+        <img src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg3">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Acabamos de enviarte un email, hacé click en el enlace para activar tu cuenta. <br></p>
+      <div class="message-image">
+        <img  src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages Area-->
+  <div class="super-container bg-photo-2">  
+    <!-- Opacidad -->
+    <div class="black-overlay"></div>
+    <!-- Opacidad -->
+    
+    <div class="container-register">
+      
+      <h3>Registro <b>YLMM</b></h3>
+  
+        <input type="hidden" id="selectedcountry" name="selectedcountry" value="">
+        <input type="hidden" id="selectedprovince" name="selectedprovince" value="">
+        
+        <input type="text" name="name" placeholder="Nombre y Apellido" data-type="string" id="name" class="placeholder-color">
+        <input type="text" name="email" placeholder="Email" data-type="email" id="email" class="placeholder-color">
+        
+        <select data-type="string" name="type" id="type">
+          <option value="" disabled selected>¿Sos músico o fan?</option>
+          <option value="F">Fan</option>
+          <option value="B">Músico</option>
+        </select>
+      
+        <select data-type="string" name="id_genre[]" id="id_genre">
+          <option value="" disabled selected>¿Qué géneros musicales te interesan?</option>
+        </select>
+
+        <select data-type="string" id="country" name="country">
+          <option value="" disabled selected>País</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Uruguay">Uruguay</option>
+        </select>
+
+        <select data-type="string" id="argprovince" name="argprovince">
+          <option value disabled selected hidden>Provincia</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="Buenos Aires-GBA">Buenos Aires-GBA</option>
+          <option value="Capital Federal">Capital Federal</option>
+          <option value="Catamarca">Catamarca</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Chubut">Chubut</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Entre Ríos">Entre Ríos</option>
+          <option value="Formosa">Formosa</option>
+          <option value="Jujuy">Jujuy</option>
+          <option value="La Pampa">La Pampa</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Misiones">Misiones</option>
+          <option value="Neuquén">Neuquén</option>
+          <option value="Río Negro">Río Negro</option>
+          <option value="Salta">Salta</option>
+          <option value="San Juan">San Juan</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Santiago del Estero">Santiago del Estero</option>
+          <option value="Tierra del Fuego">Tierra del Fuego</option>
+          <option value="Tucumán">Tucumán</option>
+      </select>
+
+       <select data-type="string" id="departamentos" name="departamentos" style="display: none;">
+                  <option value disabled selected hidden>Departamentos</option>
+                  <option value="Artigas">Artigas</option>
+                  <option value="Canelones">Canelones</option>
+                  <option value="Cerro Largo">Cerro Largo</option>
+                  <option value="Colonia">Colonia</option>
+                  <option value="Durazno">Durazno</option>
+                  <option value="Flores">Flores</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Lavalleja">Lavalleja</option>
+                  <option value="Maldonado">Maldonado</option>
+                  <option value="Montevideo">Montevideo</option>
+                  <option value="Paysandú">Paysandú</option>
+                  <option value="Río Negro">Río Negro</option>
+                  <option value="Rivera">Rivera</option>
+                  <option value="Rocha">Rocha</option>
+                  <option value="Salto">Salto</option>
+                  <option value="San José">San José</option>
+                  <option value="Soriano">Soriano</option>
+                  <option value="Tacuarembó">Tacuarembó</option>
+                  <option value="Treinta y Tres">Treinta y Tres</option>
+              </select>
+      	
+      	<input type="text" name="zipcode" id="zipcode" placeholder="Código Postal" data-type="number" class="placeholder-color" style="display: none;">
+        <input type="password" class="pw1 placeholder-color" id="password" name="password" placeholder="Clave" data-type="password">
+        <input type="password" class="pw2 placeholder-color" name="confirm_password" placeholder="Repetir Clave" data-type="password">
+        
+        <button class="btn-purple" onclick="registerService()">REGISTRARME</button>
+
+      <div class="login-box left">
+      
+        <!-- Facebook Connect -->
+        <div class="social-container " style="margin: 0!important;">
+          <div class="social-inner-container" style="margin-top:0;">
+              <a class="btn-social btn-fb" href="redirect/facebook">
+                  <span> Sign in with Facebook</span>
+              </a>
+          </div>
+        </div>
+        <!-- Facebook Connect -->
+      
+
+        <!-- Google Connect -->
+        <div class="social-container " style="margin: 0!important;">
+          <div class="social-inner-container" style="margin-top:0;">
+              <a class="btn-social btn-google" href="redirect/google">
+                <span> Sign in with Google Plus</span>
+              </a>
+            </div>
+        </div> 
+        <!-- Google Connect -->
+      
+      <div class="bottom-back" style="position: relative; width: 100%!important;">
+        <div class="arrow-back">         
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="overlay-loader">
+      <div id="loader">
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div>
+  </div>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,532 @@
+ *, html, body {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .wall-container {
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+  }
+
+  .wall-container .inner-container {
+    width: 850px;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    min-height: 20em;
+  }
+
+  .wall-area,
+  .video-area {
+    
+    border: 1px solid #ebebe7;
+    min-height: 20em;
+  }
+
+  .wall-area{
+    float: left;
+    width: 854px;
+  }
+
+  .wall-area .main-post{
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+
+
+  .wall-area .main-post .top{
+    width: 100%;
+    height: 3em;
+    padding: 0.9em;
+    background: #f6f7f9;
+    border-bottom: 1px solid #ebebe7;
+  }
+
+  .wall-area .main-post .top ul{
+    width: 100%;
+    display: inline-block;
+  }
+  .wall-area .main-post .top ul li{
+    float: right;
+    padding: 0 0.4em;
+    position: relative;
+  } 
+
+  .wall-area .main-post .top ul li:not(:first-child):after{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #ebebe7;
+    position: absolute;
+  }
+
+  .wall-area .main-post .top ul li a{ 
+    color: #afaaaa;
+  }
+
+  .wall-area .main-post .post-area  {
+    width: 100%;
+    height: auto;
+    float: left;
+    border-bottom: 1px solid #ebebe7;
+
+  }
+
+  .wall-area .main-post .post-area .user-area{
+    width: 20%;
+    height: 7em;
+    float: left;
+    border-right: 1px solid #ebebe7;
+    position: relative;
+  }
+
+  .wall-area .main-post .post-area .user-area .avatar{ 
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 1px solid #ebebe7;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .main-post .post-area .input-area{
+    width: 80%;
+    height: 7em;
+    float: left;
+    border: 1px solid #ebebe7;
+  }
+
+  .wall-area .main-post .post-area .input-area textarea{ 
+    width: 100%;
+    height: 100%;
+    resize:  none;
+    outline: none;
+    padding: 0.5em;
+    border: 1px solid white;
+  }
+
+  .wall-area .main-post .post-area .tool-bar{
+    width: 100%;
+    height: 3em;
+    float: left;
+    padding: 0.8em;
+    box-shadow: none;
+    background: #f6f7f9;
+    
+  }
+  .wall-area .main-post .post-area .tool-bar button.btn-publicar{ 
+    width: 80px;
+    height: 25px;
+    color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+  }
+
+  .wall-area .history-post {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 1em;
+    /*min-height: 30em;*/
+  }
+
+  .wall-area .history-post .post-item {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 6em;
+    background: #f6f7f9;
+  }
+
+  .wall-area .history-post .post-item .user-area {
+    width: 100%;
+    height: 5em;
+    float: left;
+    padding: 0.7em 1em 1em 1.2em;
+    background: #f6f7f9;  
+    position: relative;
+  }
+
+  .wall-area .history-post .post-item .user-area .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .history-post .post-item .user-area .data {
+    float: left;
+    padding-left: 1em;
+  }
+
+  .wall-area .history-post .post-item .user-area .data h1 a{
+    color: #01b1e6;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .wall-area .history-post .post-item .user-area .data p  {
+    color: #afaaaa;
+  }
+
+  .wall-area .history-post .post-item .user-post {
+    width: 100%;
+    float: left;
+    min-height: 4em;
+    border-top: 1px solid #e2e2e2;
+  }
+
+  .wall-area .history-post .post-item .user-post .post-content{ 
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 1em;
+  }
+  .wall-area .history-post .post-item .user-post .post-content span{
+    line-height: 22px;
+  }
+
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar,
+  .wall-area .history-post .post-item .user-post .tool-bar{
+    width: 100%;
+    height: 3em;
+    float: left;
+    padding: 0.8em;
+    box-shadow: none;
+    background: #f6f7f9;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul,
+  .wall-area .history-post .post-item .user-post .tool-bar ul{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li{
+    float: right;
+    padding: 0 0.4em;
+    position: relative;
+  } 
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li a,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li a {
+    color: #afaaaa;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li:not(:first-child):after,
+  .wall-area .history-post .post-item .user-post .tool-bar ul li:not(:first-child):after{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment {
+    width: 100%;
+    height: auto;
+    min-height: 3em;
+    float: left;
+    background: #ebebe7;
+    margin-bottom: 2em;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li{
+    width: 100%;
+    height: auto;
+    float: left;
+    /*padding: 0.8em 0.5em;*/
+    border: 1px solid white;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li .avatar{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0.5em;
+    background: url(http://ell.h-cdn.co/assets/cm/14/52/549b4f3aefb5a_-_elle-ed-sheeran-v-elv.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li span a{
+    color: #01b1e6;
+    /*float: left;*/
+    font-size: 14px;
+    margin-left: 0em;
+  }
+  .wall-area .history-post .post-item .user-post .list-comment  ul li span {
+    font-size: 12px;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area {
+    height: auto;
+    float: left;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .text-area {
+    width: 26.8em;
+    height: 4em;
+    float: left;
+    margin-top: 0.4em;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .text-area textarea{ 
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 0.5em;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li {
+    width: auto;
+    border: none;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar ul li a{ 
+    width: 80px;
+      height: 25px;
+      color: white;
+      border: none;
+      float: right;
+      cursor: pointer;
+      background: tomato;
+      line-height: 26px;
+      font-size: 12px;
+      text-align: center;
+  }
+
+  .wall-area .history-post .post-item .user-post .list-comment  ul li.comment-post-area .tool-bar {
+    padding: 0.5em 0;
+    background: transparent;
+    border-top: 1px solid #ebebe7;
+  }
+  
+  .wall-area .history-post .post-item .user-post .list-comment  ul li .media-post{
+    width: 100%;
+    height: 262px;
+    float: left;
+    color: white;
+    text-align: center;
+    background: tomato;   
+  }
+
+  .tool-bar.comment {
+    padding: 0!important;
+    margin-top: 1em;
+  }
+
+  .tool-bar.comment ul li {
+    float: right!important;
+    width: auto!important;
+    border: none!important;
+  }
+
+    .comments-options {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer; 
+      position: absolute;
+      background: url('../../images/arrow-bottom.png');
+      background-size: cover;
+    }
+
+    .comments-options ul{
+        top: 15px;
+        right: 0;
+        width: auto;
+        min-width: 8em;
+        position: absolute;
+        padding: 1em 0em;
+        background: white;
+        display: none;
+        box-shadow: 1px 1px 1px 1px #ebebe7;
+    }
+
+    .comments-options.active ul{
+      display: block;
+    }
+
+    .comments-options.active ul a{
+      color: black;
+    }
+
+    .comments-options ul li{
+      padding: 0.5em 0;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .comments-options ul li:hover {
+      background: #ebebe7;
+    }
+    .comments-options ul li:hover a {
+      color: #e42693;
+    }
+
+    .comments-options ul li:not(:last-child){
+      border-bottom: 1px solid #ebebe7;
+    }
+
+  /*------------------------------------------------------------*/
+
+  .video-area{
+      width: 300px;
+      height: 366px;
+      float: right;
+      padding: 1em;
+      /*max-height: 44em;*/
+      /*overflow: hidden;*/
+      background: white;
+      box-shadow: 1px 1px 1px 1px #dbdbdb;
+      
+    }
+
+    .video-area .header{
+      width: 100%;
+      height: 20px; 
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .video-area .header p{ 
+      text-align: center;
+      padding-bottom: 0.8em;
+      border-bottom: 1px solid #ebebe7;
+      font-size: 15px;
+    }
+
+    .video-area .video-container {
+      width: 100%;
+      height: auto;
+      padding: 0 0.5em;
+      margin-top: 1em;
+      min-height: 10em;
+       
+      overflow: hidden;
+    }
+
+
+    /* -------------------------------------------------------------------------------- */
+
+    .swiper-container {
+          width: 100%;
+          height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .thumb-video {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 23em;
+        position: absolute;
+      }
+
+      .thumb-video-area {
+        width: 130px;
+        height: 94px;
+        float: left;
+      }
+      .thumb-toolbar-area {
+        width: 190px;
+        height: 50px;
+        float: left;
+      }
+
+      .thumb-toolbar-area .video-info {
+        width: 200px;
+        height: 100%;
+        float: left;
+        text-align: left;
+        padding: 0.3em 0 0 0.5em;
+        font-size: 15px;
+      }
+
+      .thumb-toolbar-area .video-like{
+        width: 30px;
+        height: 27px;
+        float: right;
+        cursor: pointer;
+         
+      } 
+    .like-comment{
+      background: url(../../images/resources/like_off.png)no-repeat!important; 
+      background-size: 100% 100%!important;
+    }
+
+
+    .like-comment.active{
+      background: url(../../images/resources/like_on.png)no-repeat!important; 
+      background-size: 100% 100%!important;
+    }
+
+    .video-like{
+      background: url(../../images/resources/like_off.png)no-repeat!important; 
+      background-size: 100% 100%!important;
+    }
+
+    .video-like.active{
+      background: url(../../images/resources/like_on.png)no-repeat!important; 
+      background-size: 100% 100%!important;
+    }
+
+    .share-icon{
+      background: url(../../images/share.png)no-repeat!important; 
+      background-size: 100% 100%!important;
+    }
+
+  .edit-a{  
+    font-size: 12px;
+    color: white!important;
+    text-align: center;
+  }
+
+.video-container{
+    margin-top: 2%;
+    background: url(../../images/resources/thumbnail_video.png)no-repeat;
+    background-size: 100% auto;
+  }
+
+  .controls button[data-state="play"] {
+     background-image: none;
+  }
+
+@media all and (-ms-high-contrast:none)
+ {
+   .edit-a{
+    transform: translate(-50%, 0%)!important;
+   }
+ }
+
+  
+.text-area.responses{
+  width: 88%;
+}
+  .post-new-coment{
+    padding: 0em 0em!important;
+  }

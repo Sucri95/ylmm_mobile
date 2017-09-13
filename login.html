@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>YLMM</title>
+  <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/plantilla.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link rel="stylesheet" type="text/css" href="css/plantilla2.css">
+  <link rel="stylesheet" type="text/css" href="css/ylmm-media.css">
+
+
+
+
+  <style type="text/css">
+   .messages{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+
+  .messages .container {
+    top: 50%;
+      left: 50%;
+      width: 30em;
+      height: auto;
+      padding: 2em;
+      position: relative;
+      background: black;
+      transform: translate(-50%,-50%);
+      border: 1px solid white;
+  }
+ 
+  .messages .container .close-messages {
+      
+      top: 5px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      color: gray;
+      padding-top: 5px;
+      font-size: 16px;
+      text-align: center;
+      position: absolute;
+      cursor: pointer;
+      background: url(img/close.png)no-repeat;
+      background-size: cover;
+  }
+
+  .messages .container .message-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .messages .container .message-image img{ 
+    width: auto;
+  }
+
+  .messages .container p{
+    color: white; 
+    margin-top: 1em;
+  }
+
+  .container-medium{
+      top: 0!important;
+      left: 0!important;
+      float: none!important;
+      transform: none!important;
+      float: none!important;
+      margin: 2em auto!important;
+      position: relative!important;
+  }
+
+  body{
+    overflow: hidden;
+  }
+
+  #password{
+    margin-top: 0.5em;
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+  <!-- Messages Area-->
+
+  <div class="messages" id="msg1">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Usuario o clave inválida<br></p>
+      <div class="message-image">
+        <img  src="img/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg2">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">No se encuentra registrado en You Love My Music<br></p>
+      <div class="message-image">
+        <img src="img/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg3">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">La configuración de tu cuenta de Facebook no permite el registro en YLMM. Por favor, intentá configurarla o registrate directamente.<br></p>
+      <div class="message-image">
+        <img  src="img/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages Area-->
+
+	<div class="super-container bg-photo">  
+		<!-- Opacidad -->
+			<div class="black-overlay"></div>
+		<!-- Opacidad -->
+
+		<div class="container-medium">
+			
+			<h3>Accedé a tu cuenta</h3>
+			
+			<div class="login-box left">
+
+				<!-- Facebook Connect -->
+				<div class="social-container ">
+					<div class="social-inner-container">
+						<input type="hidden" name="type">
+						<h4>LOG IN VIA <b>FACEBOOK</b></h4>
+						<a class="btn-social btn-fb" href="redirect/facebook">
+							<span> Sign in with Facebook</span>
+						</a>
+					</div>
+				</div>
+				<!-- Facebook Connect -->
+
+
+				<!-- Google Connect -->
+				<div class="social-container ">
+					<div class="social-inner-container">
+					<input type="hidden" name="type">
+						<h4>LOG IN VIA <b>GOOGLE</b></h4>
+						<a class="btn-social btn-google" href="redirect/google">
+							<span> Sign in with Google Plus</span>
+						</a>
+					</div>
+				</div>
+				<!-- Google Connect -->
+
+			</div>
+
+			<!-- Area de Ingreso a YLMM -->
+			<div class="login-box right">
+			<h4>LOG IN VIA <b>YLMM</b></h4>
+				<input type="text" name="email" id="email" placeholder="EMAIL" class="placeholder-color">
+				<input type="password" name="password" id="password" placeholder="CLAVE" class="placeholder-color">
+
+					<button class="btn-purple btn-register" name="ingresar" onclick="loginService()">INGRESAR</button>
+					<p style="font-size: 12px;">¿No tenés cuenta? <a href="/mobile_app/register.html">REGISTRATE</a></p>
+			</div>
+			<!-- Area de Ingreso a YLMM -->
+
+			<!--div class="bottom-back" style="position: relative;">
+				<div class="arrow-back">
+				</div>
+			</div-->
+
+		</div>
+	</div>
+
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="../../js/form-validator.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+
+	*, html, body {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+		nav .items ul li .notification {
+			text-align: center;
+			position: relative;
+		}
+
+		nav .items ul li .notification .msj {
+		    top: -5px;
+		    right: -8px;
+		    width: 20px;
+		    height: 20px;
+		    border-radius: 50%;
+		    background: red;
+		    position: absolute;
+		    font-size: 12px;
+		    padding-top: 3px;
+		}
+
+
+		.notification .fa {
+			top: 45%;
+			left: 50%;
+			color: #9e9e9e;
+			font-size: 1.7em;
+			transform: translate(-50%, -50%);
+			position: absolute;
+		}
+
+		.bg-photo {
+			margin: 0;
+			/*min-height: 100vh;*/
+			border: none;
+			background: url(../../images/resources/banners_A.png)no-repeat;
+			background-size: cover; 
+			position: relative;
+		}
+		.black-overlay {
+			width: 100%;
+			height: 100%;
+			float: left;
+			position: absolute;
+			background: rgba(0,0,0,0.6);
+		}
+
+		.container-medium {
+			top: 50%;
+			left: 50%;
+			width: 1200px;
+			height: 40em;
+			padding: 2em 1em;
+			float: left;
+			transform: translate(-50%, -50%); 
+			background: transparent;
+			position: absolute;
+		}
+
+		.container-medium > h3{ 
+			width: 100%;
+			text-align: center;
+			color: white;
+			position: relative;
+			font-weight: 100;
+			margin-bottom: 2em;
+		}
+		.container-medium > h3:before{
+			content: '';
+		    width: 6em;
+		    height: 5px;
+		    left: 50%;
+		    bottom: -105%;
+		    transform: translateX(-50%);
+		    position: absolute;
+			background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+			background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);
+		}
+
+		.container-medium .login-box {
+			width: 550px;
+			height: auto;
+			color: white;
+			font-weight: 100;
+			text-align: center;
+		}
+
+		.container-medium .login-box.left {
+			float: left;
+			padding: 0 6em;
+		}
+
+		.container-medium .login-box.right {
+			float: right;
+			padding: 2em 2em;
+		}
+
+
+		.container-medium .login-box h3 {
+			font-weight: 100;
+			margin-top: 1em;
+		}
+
+		.container-medium .login-box.right input {
+			outline: none;
+			width: 100%;
+			height: 4.5em;
+			margin-top: 2em;
+			color: white;
+			text-indent: 10px;
+			font-size: 15px;
+			background: rgba(0, 0, 0, 0.5);
+			border: 1px solid rgba(255, 255, 255, 0.54);
+			font-size: 12px;
+		}
+
+
+		.container-medium .login-box.right input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: white;
+		}
+		.container-medium .login-box.right input::-moz-placeholder { /* Firefox 19+ */
+		  color: white;
+		}
+		.container-medium .login-box.right input:-ms-input-placeholder { /* IE 10+ */
+		  color: white;
+		}
+		.container-medium .login-box.right input:-moz-placeholder { /* Firefox 18- */
+		  color: white;
+		}
+
+		.container-medium .login-box.right .btn-purple {
+			outline: none;
+			width: 100%;
+			height: 3em;
+			margin: 1.5em 0 1em 0;
+			border: none;
+			color: white;
+			font-size: 19px;
+			cursor: pointer;
+		    transition: 1s ease-in-out;
+	        -moz-transition: 1s ease-in-out;
+	        -ms-transition: 1s ease-in-out;
+	        background: url(../../images/resources/boton_1.png)no-repeat;
+		    background-size: cover;
+		    font-size: 13px;
+		}
+
+		.container-medium .login-box.right .btn-purple:hover {
+		    background: url(../../images/resources/boton_2.png)no-repeat;
+		    background-size: cover;
+
+		}
+
+		.container-medium .login-box.right  p a{
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			text-indent: 10px;
+
+		}
+
+		.social-container {
+		    width: 100%;
+		    text-align: center;
+		    position: relative;
+		    margin: 2.5em 0em 2.5em 0em;
+		}
+
+		.social-container .create-coment {
+			height: 14em;
+			width: 40em!important;
+		    float: none;
+		    margin: 0 auto;
+		    position: relative;
+		}
+
+		.user-post-area{
+			border: 1px solid #e2e2e2;
+			box-shadow: 0 1px 2px rgba(0,0,0,.1);
+			font-size: 12px;
+		}
+
+		.social-container .create-coment button {
+			right: 0;
+			margin-top: 0.5em;
+			font-size: 12px;
+		}
+		
+		.social-container .social-inner-container {
+			width: 100%;
+			height: auto;
+			float: left;
+			margin-top: 2em;
+		}
+
+		.social-container  .btn-social {
+			width: 100%;
+			height: 3em;
+			float: left;
+			color: white;
+			border-radius: 5px;
+			position: relative;
+			margin-top: 1em;
+			position: relative;
+			overflow: hidden;
+
+		}
+
+		.social-container  .btn-social.btn-fb{
+			background: #2d4373;
+			font-size: 12px;
+		}
+
+		.social-container  .btn-social.btn-google{
+			background: #dd4b39;
+			font-size: 12px;
+		}
+
+		.social-container  .btn-social:before {
+		    top: 51%;
+		  	left: 8%;
+		    width: 2.3em;
+		    height: 100%;
+		    font-size: 15px;
+		    position: absolute;
+		    transform: translate(-50%,-50%);
+		    border-right: 1px solid rgba(212, 212, 212, 0.3);
+		    padding-top: 21px;
+
+		}
+
+		.social-container  .btn-social.btn-fb:before {
+			font-family: FontAwesome;
+			content: "\f09a";
+		}
+		.social-container  .btn-social.btn-google:before {
+			font-family: FontAwesome;
+			content: "\f0d5";
+		}
+
+
+		.social-container  .btn-social span{
+			top: 50%;
+		 	left: 50%;
+		   	position: absolute;
+		    transform: translate(-50%,-50%);
+		}
+
+
+		.bottom-back {
+			width: 100%;
+			height: 4em;
+			float: left;
+			text-align: center;
+		}
+
+		.bottom-back a{
+			color: white;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+
+		.text-band{
+			float: none;
+			margin: 0 auto;
+			max-width: 40em;
+			position: relative;
+		}
+
+		.text-band span{
+			line-height: 32px;
+			font-size: 12px;
+		}
+		.show-genres{
+			line-height: 32px;
+			font-size: 12px;
+		}
+
+		.about-title{
+			font-size: 15px;
+		}
+
+		.btn-edit,
+		.btn-edit-role,
+		.btn-edit-genre {
+	        float: right;
+		    position: absolute;
+		    width: 16px;
+		    height: 16px;
+		    top: -10px;
+    		right: -10px;
+		    cursor: pointer!important;
+		    background: url(../../images/resources/gear.png)no-repeat!important;
+		    background-size: 100% 100%!important;
+		    /*display: none;*/
+		    transform: translate(0%, 0%);
+		    z-index: 9;
+		}
+
+		.btn-edit:hover,
+		.btn-edit-role:hover,
+		.btn-edit-genre:hover {
+			transition: 1s ease-in-out;
+			-moz-transition: 1s ease-in-out;
+            -ms-transition: 1s ease-in-out;
+	      	background: url(../../images/resources/gear_on.png)no-repeat!important;
+	      	background-size: 100% 100%!important;
+	      	display: block;
+		}
+
+		.text-band-container  {
+		    float: none;
+		    margin: 0 auto;
+		    max-width: 40em;
+		    position: relative;
+		}
+
+
+		.btn-edit-member {
+		    right: 0;
+		    left: 50%;
+		    float: none;
+		    border: none;
+		    color: white;
+		    cursor: pointer;
+		    font-size: 12px;
+		    letter-spacing: 1px;
+		    background: -webkit-linear-gradient(-45deg, #e42693 , #6e39a6);
+		    background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);
+		    font-weight: bold;
+		    position: relative;
+		    text-transform: uppercase;
+		    padding: 0.4em 1em 0.4em 1em;
+		    margin: 0 auto;
+		    transform: translateX(-50%);
+		}
+
+@media all and (-ms-high-contrast:none)
+{
+	.container-medium .login-box.right .btn-purple:hover {
+		-ms-transition: 1s ease-in-out;
+		background: -ms-linear-gradient(-45deg, #e42693 , #6e39a6);
+		background-size: cover;
+	}
+}
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+	.container-medium .login-box.right  p a,
+	.btn-edit-member{
+		font-weight: 400;
+	}
+}

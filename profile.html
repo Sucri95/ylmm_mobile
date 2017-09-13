@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://idangero.us/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/croppie/croppie.css">
+    <link rel="stylesheet" href="../../css/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bandwall.css">
+    <link rel="stylesheet" type="text/css" href="css/new_wall.css">
+    <link rel="stylesheet" type="text/css" href="css/walls.css">
+
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/widget.css">
+    <link rel="stylesheet" type="text/css" href="css/videos.css">
+    <link rel="stylesheet" type="text/css" href="css/ylmm.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/bands_comment.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/ylmm-media.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactList.css">
+    
+
+</head>
+
+<body>
+    
+    <input type="file" name="picture-avatar" class="file-avatar hidden" id="input_back">
+    <input type="hidden" id="type">
+    <input type="hidden" id="change">
+
+
+    <div class="crop-area croppie-area">
+        <nav class="to-top bg-img">
+            <div class="to-right rotate-area" data-deg="90">
+                <i class="fa fa-2x fa-repeat icon-rotate center-absolute" data-deg="90"></i>
+            </div>
+            <div class="to-left rotate-area back-icon">
+                <i class="fa fa-2x fa-arrow-left icon-rotate center-absolute" ></i>
+            </div>
+        </nav>
+        <div class="crop-container center-absolute ">
+            <div class="demo"></div>
+            <img id="my-image" src="" />
+
+            <button class="basic-result btn-area-btn no-radius">ACEPTAR</button>
+        </div>
+    </div>
+    <div class="crop-area preview">
+        <nav class="to-top bg-img">
+            <div class="to-left rotate-area hidde-overlay">
+                <i class="fa fa-2x fa-arrow-left center-absolute" style="color: white;"></i>
+            </div>
+            <div class="to-right setImage" style="padding:1em;" onclick="uploadBackground();">
+                <p style="color: white; font-weight: bold; font-size: 12px; line-height: 3em;">ACEPTAR</p>
+            </div>
+        </nav>        
+        <div class="crop-container center-absolute">
+            <img id="my-image" class="previewImage"  src=""  style="width: 100%; height:100%;"/>
+        </div>
+    </div>
+
+    <div class="container  no-padding" style="padding-bottom: 4em!important;">
+
+        <div class="inner-container">
+
+            <div class="header-profile bg-img" id="background_img">
+
+                <div class="overlay" style="display: block; position: absolute; z-index: 0;"></div>
+
+                <div class="back-area">
+                    <i class="fa fa-arrow-left fa-2x custom-back active" aria-hidden="true"></i>
+                </div>
+
+
+                <div id="btn-follow-2" class="container-follow">
+                    <a href="javascript:;" class="btn-follow">
+                        <div class="icon-follow"></div>
+                    </a>
+                </div>
+
+                <div class="gear-area gear"></div>
+                <div class="desplegable">
+                    <ul>
+                        <li>
+                            <a class="changeImage image-update">Imagen de Portada</a>
+                        </li>
+                        <li>
+                            <a href="/logout/mobile">Cerrar Sesión</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="info-area">
+                    <div class="avatar-area avatar-img" id="img-avatar"></div>
+                    <div class="user-name-area text-center">
+                        <div class="edit-avatar-profile image-update">
+                            <i class="fa fa-camera custom-camara" aria-hidden="true"></i>
+                        </div>
+
+                        <h3 class="text-white" id="wall_name_user"></h3>
+                    </div>
+
+                    <div class="user-related-area">
+                        <ul class="flex-list user-follow">
+
+                            <li class=" border-radius-20">
+                                <div class="col col-30">
+                                    <i class="icon user followers to-right"></i>
+
+                                </div>
+                                <a id="followers_redirect">
+                                    <div class="col col-70">
+                                        <span class="to-left text-center full-width text-white count" id="count-followers"></span>
+                                        <p class="to-left text-center full-width text-white text">Followers</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class=" border-radius-20">
+                                <div class="col col-30">
+                                    <i class="icon user followers to-right"></i>
+                                </div>
+                                <a id="following_redirect">
+                                    <div class="col col-70">
+                                        <span class="to-left text-center full-width text-white count" id="count-following"></span>
+                                        <p class="to-left text-center full-width text-white text">Following</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="top-main-container base-white bottom-line">
+
+                <div class="swiper-container">
+                    <div id="swiperContent" class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="javascript:;" id="stat_1">Mi Muro</a>
+                        </div>
+                        <div class="swiper-slide"><a href="javascript:;" id="stat_2">Muro de Banda</a>
+                        </div>
+                        <div class="swiper-slide"><a href="javascript:;" id="stat_3">Playlist</a> 
+                        </div>
+                        <div class="swiper-slide"><a href="javascript:;" id="stat_4">Mi Música</a>
+                        </div>
+                        <div class="swiper-slide"><a href="javascript:;" id="stat_5">Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+            <div class="share-overlay">
+                <div class="container">
+                    <div class="close-share"></div>
+                    <div id="share-post" class="addthis_inline_share_toolbox active"></div>
+                </div>
+            </div>
+
+
+
+            <div class="overlay" style="display: none; top: 0;">
+                <div class="container">
+                    <div class="close"></div>
+                    <h4 style="margin-bottom: 1em;">Cargar Video</h4>
+                    <form class="form-horizontal margin-none" id="form-signup_v2" action="/mobile/upload/videoartists" method="post" role="form">
+                        <input type="hidden" name="idmusic" id="idmusic">
+                        <input type="hidden" name="type" class="type">
+
+                        <img class="img-yt" style="width: 413.333px; height: 300px; float: none; margin: 0 auto;  display: none;" src="">
+                        <input class="input-type-1 yt-url" type="text" name="url" id="url" placeholder="Link del Video">
+                        <p style="font-size: 8px; font-size: 9px; margin-top: 6px; letter-spacing: 1px; line-height: 14px;">Por favor, para cargar correctamente el video seleccioná el link de YouTube
+                            <br>luego de ver el aviso publicitario. Saludos, <strong style="color: #e42693;">YLMM</strong>
+                        </p>
+                        <input class="input-type-1" type="text" name="name" id="name" placeholder="Nombre del Video">
+                        <button class="btn-green-1" name="ingresar" disabled style="width: 23em;"><b>PUBLICAR</b>
+                        </button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container list hidden" style="min-height: 32em;">
+                <ul class="list column font-12 column to-left list-mobile" id="append_music"></ul>
+
+                <div id="wrapper" class="hidden">
+                    <div id="guid" style="transform: translate(0,0); position: absolute; top: 0; float: right;">
+                        <ul>
+                            <li><a href="#no-letter">#</a></li>
+                            <li><a href="#a">A</a></li>
+                            <li><a href="#b">B</a></li>
+                            <li><a href="#c">C</a></li>
+                            <li><a href="#d">D</a></li>
+                            <li><a href="#e">E</a></li>
+                            <li><a href="#f">F</a></li>
+                            <li><a href="#g">G</a></li>
+                            <li><a href="#h">H</a></li>
+                            <li><a href="#i">I</a></li>
+                            <li><a href="#j">J</a></li>
+                            <li><a href="#k">K</a></li>
+                            <li><a href="#l">L</a></li>
+                            <li><a href="#m">M</a></li>
+                            <li><a href="#n">N</a></li>
+                            <li><a href="#ñ">Ñ</a></li>
+                            <li><a href="#o">O</a></li>
+                            <li><a href="#p">P</a></li>
+                            <li><a href="#q">Q</a></li>
+                            <li><a href="#r">R</a></li>
+                            <li><a href="#s">S</a></li>
+                            <li><a href="#t">T</a></li>
+                            <li><a href="#u">U</a></li>
+                            <li><a href="#v">V</a></li>
+                            <li><a href="#w">W</a></li>
+                            <li><a href="#x">X</a></li>
+                            <li><a href="#y">Y</a></li>
+                            <li><a href="#z">Z</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        
+            <div id="wall_appended" class="light-gray">
+
+
+                <div class="overlay video">
+                    <div class="container" style="min-height: 10em;">
+                        <div class="close-v"></div>
+                        <h4>Cargar Video</h4>
+                        <form id="validateSubmitForm" action="/mobile/upload/video" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id_user" class="id_user">
+                            <input type="hidden" name="id_wall" class="id_wall">
+                            <input type="hidden" name="type" class="type">
+
+                            <input class="input-type-1" type="text" name="title" id="title" placeholder="Escribí el título del/ los video/ s..." autocomplete="off" style="width: 100%;">
+                            <div class="video-container"></div>
+                            <div class="timer">
+                                <div class="loader">
+                                    <svg class="circular-loader" viewBox="25 25 50 50">
+                                        <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#e42693" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <input type="text" id="array_video" name="array_video" style="display: none;">
+
+                            <input class="load_vid" id="upload_video" type="file" accept="video/*" name="video" style="display: none;" size="20">
+                            <br/>
+
+                            <button id="btn-sub-vid" class="submit_btn image" type="submit">publicar</button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="overlay-img">
+                    <div class="container">
+                        <div class="close"></div>
+                        <h4>Cargar Imágenes</h4>
+                        <form method="POST" action="/mobile/upload/pictures" enctype="multipart/form-data">
+                            <input type="hidden" name="id_user" class="id_user">
+                            <input type="hidden" name="id_wall" class="id_wall">
+                            <input type="hidden" name="type" class="type">
+                            <input class="input-type-1" type="text" name="title" id="title" placeholder="Escribí el título de la/ s imágen/ es..." autocomplete="off" style="width: 100%;">
+                            <div class="img-container"></div>
+                            <div class="timer">
+                                <div class="loader">
+                                    <svg class="circular-loader" viewBox="25 25 50 50">
+                                        <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#e42693" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <input type="text" id="array" name="array" style="display: none;">
+                            <input class="load_img" type="file" id="load_img" accept="image/*" name="picture[]" multiple style="display: none;" size="20">
+                            <br/>
+                            <button id="btn-sub-img" disabled="true" class="submit_btn image" type="submit">publicar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="wall-container" style="margin-bottom: 2em;">
+                    <div class="inner-container">
+                        <div class="wall-area">
+                            <div class="main-post">
+                                <div class="top">
+                                    <ul>
+                                        <li class="upload-images"><a href="javascript:;">IMÁGENES</a>
+                                        </li>
+                                        <li class="upload-videos"><a href="javascript:;">VIDEOS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-area">
+
+                                    <div class="user-area">
+                                        <div class="avatar" id="auth_profile_pic"></div>
+                                        <input id="profile_pic" class="hidden">
+                                    </div>
+
+                                    <div class="input-area post-relative text-area responses">
+                                        <!-- old text area
+                                        <textarea class="main-textarea" name="comment"></textarea> -->
+
+                                        <!-- New textarea -->
+                                        <div id="content" contenteditable="true" class="input-text main-textarea" style="outline:0px;"></div>
+                                        <div class="contactList">
+                                            <ul class="full-width to-left"></ul>
+                                        </div>
+                                    </div>
+
+                                    <input id="userArray" type="hidden" name="">
+
+                                    <input type="hidden" class="id_user" name="id_user">
+                                    <input type="hidden" class="id_wall" name="id_wall">
+                                    <input type="hidden" id="username" name="username">
+
+                                    <div class="tool-bar">
+                                        <button class="btn-publicar">PUBLICAR</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--
+                        <div class="video-area" style="margin-left: 20px;">
+                            <div class="header">
+                                <p id="title_slide">MI MÚSICA FAVORITA</p>
+                            </div>
+                            <div class="related-area" style="width: 100%;">
+                                <ul id="video_list">
+                                    <li class="last-item-video" id="last-item-video"></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="to-bottom base-black">
+        <ul class="footer-items">
+            <li><a id="wild_card" href="javascript:;"><i class="icon plus"></i></a>
+            </li>
+            <li><a href="ranking.html"><i class="icon cup"></i></a>
+            </li>
+            <li><a href="index.html"><i class="icon logo"></i></a>
+            </li>
+            <li><a id="route_profile"><i class="icon user active"></i></a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <i class="icon notification">
+                        <div class="notifications" id="msj-notification"></div>
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="overlay-loader">
+        <div id="loader">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d14bef0f66d9fe"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript" src="node_modules/croppie/croppie.min.js"></script>
+    <script type="text/javascript" src="js/load_crop.js"></script>
+    <script type="text/javascript" src="js/contactList.js"></script>
+    <script type="text/javascript" src="js/walljs.js"></script>
+    <script type="text/javascript" src="js/searcher.js"></script>
+    <script type="text/javascript" src="js/profile.js?v=42"></script>
+
+
+    <script type="text/javascript">
+       
+        $('#stat_3').on('click', function(){
+            $('.container.list').removeClass('hidden');
+        }) 
+        
+
+    </script>
+
+
+</body>
+
+</html>

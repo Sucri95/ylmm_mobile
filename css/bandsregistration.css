@@ -1,0 +1,157 @@
+  
+  #validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > div > span,
+  #validateSubmitForm > div > section > div > div.form-login.registro.my-center > span:nth-child(3),
+  .btn-purple {
+    width: 422px!important;
+  }
+  
+ 
+  .select2-container--default.select2-container--focus .select2-selection--multiple {
+    height: auto;
+    min-height: 55px;
+    border: 1px solid white;
+    padding-bottom: 1em;
+      
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: white;
+  }
+
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+      color: white;
+      border: none;
+      border-radius: 0px;
+      background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6);
+  }
+
+  .select2-selection__rendered{
+    margin-left: -8px!important;
+  }
+
+  nav .items ul.main-menu  li:nth-child(1) ul.user-sub-menu{
+    margin-top: 6.5px!important;
+  }
+
+  .inputs-hidden{
+    margin: 0px 0px 0px 0px;
+    display: none; 
+    float: right;
+  }
+
+
+
+  @media(max-width: 650px) {
+
+  .inner.my-text-center.formulario {
+    width: 80%;
+  }
+
+    .input-type-1 {
+      height: 47px!important;
+    }
+
+    .btn-purple {
+      width: 100%!important;
+    }
+
+
+    #validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > div > span,
+    #validateSubmitForm > div > section > div > div.form-login.registro.my-center > span:nth-child(3){
+      width: 100%!important;
+      margin-bottom: 0.5em;
+    }
+
+    .buscador {
+      width: 100%!important;
+    }    
+
+  }
+
+  footer {
+      display: none;
+  }
+
+
+  .buscador {
+    bottom: 0;
+  }
+
+ .main-menu  .buscador {
+  top: 25px;
+  bottom: auto;
+ }
+
+  .buscador ul{ 
+    width: 100%;
+    float: left;
+    background: white!important;
+    position: absolute;
+    
+  } 
+
+.form-login.registro.my-center .integrante .buscador.buscador-integrantes {
+    bottom: 5%!important;
+    transform: translateY(-20%);
+    z-index: 9999;
+}
+
+.inner.my-text-center.formulario {
+  top: 35%;
+  left: 50%;
+  margin-top: -1em!important;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+.boton {
+  top: -26px;
+  transform: translate(-50%,-50%)!important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    font-size: 12px!important;
+    width: auto!important;
+    margin: 0.2em 0.5em!important;
+    border-radius: 4px!important;
+    padding-right: 2em!important;
+}
+
+  .select2-container--default .select2-search--inline .select2-search__field,
+  .input-type-1{
+    caret-color: transparent;
+  }
+
+  input::-moz-placeholder { 
+    color:white!important; background-color:rgba(0,0,0,0);  
+    opacity: 1;
+  }
+  input#input-buscador::-moz-placeholder { 
+    color:#757575!important; background-color:white;  
+    opacity: 1;
+  }
+
+  .container, .login.bands{
+    position: relative!important;
+  }
+
+  .form-login.registro.my-center{
+    padding-top:0px!important; 
+    width: 60%;
+  }
+
+  #register-genero{
+    margin-top: 1.3em; 
+    font-size: 14px;
+  }
+  .integrante{
+    font-size: 14px;
+  }
+
+  .inner-top h1{
+    font-size: 15px;
+  }
+  .form-login.registro.my-center span span.selection span ul li input{
+    top: 0;
+  }

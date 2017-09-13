@@ -1,0 +1,1302 @@
+@-moz-document url-prefix() {
+    .text-area textarea {
+        font-size: 12px!important;
+    }
+    .main-textarea {
+        font-size: 12px!important;
+    }
+}
+.ul-options {
+    width: 6.5em;
+    float: right;
+    height: auto;
+    max-height: 2em;
+    margin-top: 0.8em;
+    display: inline-flex;
+}
+.ul-options li {
+    width: 2em!important;
+    height: 2em!important;
+    display: inline-flex!important;
+    margin: 0!important;
+    position: relative;
+}
+.ul-options li a.comment-like {
+    width: 100%;
+    float: right;
+    color: black;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: right;
+    text-indent: 30px;
+}
+.ul-options li a.share-band,
+.ul-options li a.love-band {
+    background-size: 22px 22px!important;
+    background-position-x: 10px!important;
+}
+#name_edit {
+    bottom: 9px;
+    left: 35px;
+    float: left;
+    z-index: 10;
+    display: none;
+    position: absolute;
+}
+#name_edit .input-type-1 {
+    width: 175px;
+    height: 35px!important;
+    min-width: 13em;
+    background: rgba(0, 0, 0, 0.5);
+}
+#name_edit .btn-white-2 {
+    top: -1px;
+    color: #fff;
+    background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6);
+    background: -moz-linear-gradient(-45deg, #e42693, #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693, #6e39a6);
+    width: 120px;
+    height: 34px;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 0px;
+    font-weight: 0;
+    letter-spacing: 0px;
+}
+#name_edit .btn-white-2:hover {
+    top: -1px;
+    color: #fff;
+    background: -webkit-linear-gradient(45deg, #e42693, #6e39a6);
+    background: -moz-linear-gradient(45deg, #e42693, #6e39a6);
+    background: -ms-linear-gradient(45deg, #e42693, #6e39a6);
+    width: 120px;
+    height: 34px;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 0px;
+    font-weight: 0;
+    letter-spacing: 0px;
+}
+#artists_searcher .container-chart.todelete {
+    box-shadow: none;
+}
+.ul-edit-post {
+    padding: 0!important;
+}
+.slider-row.profile.my-center div.video .slider-video {
+    height: 406px!important;
+}
+.container form .img-container {
+    padding: 0.2em;
+    height: auto;
+    float: left;
+    max-height: 17em;
+    overflow-y: scroll;
+    margin-bottom: 2em;
+    min-height: 17em;
+}
+.select2-results__option {
+    font-size: 12px!important;
+}
+.mobile-submenu {
+    top: 50%;
+    right: 11px;
+    width: 20px;
+    height: 10px;
+    float: right;
+    cursor: pointer;
+    background: url(../../images/resources/down-arrow.png) no-repeat;
+    opacity: 0.5;
+    display: none;
+    transition: 0.5s ease-in-out;
+    transform: translate(-50%, -50%) rotate(180deg);
+    position: absolute;
+}
+.mobile-submenu:hover {
+    opacity: 1;
+}
+.mobile-submenu.active {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.twitter-widget ul.submenu-menu-mobile {
+    top: 100%;
+    right: 13px;
+    width: 10em;
+    height: auto;
+    opacity: 0;
+    background: white;
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 1px 1px 1px #b7b7b6;
+    transform: translate(-1%, -10%);
+    position: absolute;
+    z-index: -1;
+}
+.twitter-widget ul.submenu-menu-mobile.active {
+    opacity: 1;
+    z-index: 10;
+}
+.twitter-widget ul.submenu-menu-mobile li {
+    height: 2.5em;
+    margin: 0;
+    line-height: 44px;
+    transition: all 0.5s ease-in-out;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #efebeb;
+}
+.twitter-widget ul.submenu-menu-mobile li:hover {
+    background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693, #6e39a6);
+}
+.twitter-widget ul.submenu-menu-mobile li:hover a {
+    color: white;
+}
+.twitter-widget ul.submenu-menu-mobile li a {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 1em;
+}
+.delete-video {
+    float: right;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -17px;
+    right: -37px;
+    cursor: pointer!important;
+    background: url(../../images/close.png)no-repeat;
+    background-size: cover;
+    transform: translate(0%, 0%);
+}
+.share-overlay .container .message-image {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.share-overlay .container .message-image img {
+    width: 14em;
+}
+.share-overlay .container {
+    min-height: 9em;
+}
+.share-overlay .container .addthis_inline_share_toolbox {
+    left: 50%;
+    top: 58%!important;
+    position: absolute!important;
+    transform: translate(-50%, -50%);
+    width: 44%;
+}
+#validateSubmitForm > div > section > div > div.form-login.registro.my-center > div > div > span {} .container-register .home-section-1 {
+    height: auto;
+}
+.integrante .buscador.buscador-integrantes {
+    bottom: 14px;
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+video {
+    height: 100%;
+    cursor: pointer;
+}
+.media-post-content {
+    position: relative;
+}
+.btn-edit-post {
+    top: 0!important;
+    font-size: 11px;
+}
+.responsive-register {
+    display: none!important;
+}
+.container-chart .header h2 {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+.form-login.registro.my-center {
+    padding-top: 64px
+}
+.reply-counter {
+    margin-left: 2em;
+    font-size: 10px;
+}
+.post-new-coment {
+    z-index: 1;
+}
+.responsive-register {
+    position: fixed!important;
+}
+.responsive-register ul li:hover:first-child a {
+    color: #e42693!important;
+}
+.wall-area .history-post .post-item .user-post .tool-bar ul li:nth-child(4) a {
+    width: 100%!important;
+    text-align: right;
+    font-size: 10px;
+}
+.tool-bar .comment-like {
+    line-height: 23px;
+}
+.tool-bar.comment .comment-like {
+    line-height: 13px;
+}
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-radius: 5px;
+}
+.search-area .buscador .user-sub-menu.buscador li:hover {
+    background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6)!important;
+    background: -ms-linear-gradient(-45deg, #e42693, #6e39a6)!important;
+}
+.notification .fa.fa-bars {
+    color: white;
+}
+.video-area {
+    height: auto!important;
+    min-height: 26em;
+    height: 100%;
+    margin-bottom: 2em;
+}
+.messages .container {
+    border-radius: 5px;
+}
+.post-new-coment a {
+    border-radius: 3px;
+}
+.responsive-register ul li a {
+    text-transform: uppercase;
+}
+.comment-like {
+    font-size: 10px;
+    float: right;
+    line-height: 16px;
+}
+.container-follow {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+     top: 10px;
+    cursor: pointer;
+    display: none!important;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 0.7em;
+}
+.container-follow .icon-follow {
+    width: 20px;
+    height: 20PX;
+    background: url(../img/follow.png)no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.container-follow.active .icon-follow {
+    width: 20px;
+    height: 20PX;
+    background: url(../img/unfollow.png)no-repeat;
+    background-size: cover;
+}
+#artists_searcher .container-clasificados.container-buscador {
+    z-index: 1;
+}
+.select2-selection__rendered {
+    padding: 0!important;
+    margin-left: -8px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    color: white;
+    border: none;
+    border-radius: 0px;
+    background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6);
+    background: -ms-linear-gradient(-45deg, #e42693, #6e39a6);
+    text-align: left;
+    padding: 0.4em 1em;
+}
+.slider-type-2 .container-follow a.btn-follow {
+    width: 100%;
+    height: 100%;
+}
+.artist-song span,
+.artist-name span {
+    color: gray;
+    display: none;
+    font-size: 12px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    font-size: 12px;
+    width: 95%;
+    margin: 0.2em 0.5em;
+    border-radius: 4px;
+}
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+    margin: 0.3em 0;
+    min-height: 52px;
+}
+button,
+.btn-green.dark,
+input,
+select,
+.my-inline li a {
+    border-radius: 4px!important;
+}
+.slider-row div .info-bottom {
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 1px transparent;
+}
+ul.sponsors-list {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+ul.sponsors-list li {
+    width: 150px;
+    height: auto;
+    margin: 10px 15px;
+    padding: 0.3em;
+    overflow: hidden;
+    display: inline-block;
+}
+ul.sponsors-list li:first-child {
+    text-align: right;
+}
+ul.sponsors-list li a {
+    width: 100%!important;
+    height: 100%!important;
+}
+ul.sponsors-list li a img.logo {
+    width: 100%!important;
+    height: auto!important;
+    margin: 0!important;
+}
+@-webkit-keyframes autofill {
+    to {
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+.mobile-right-menu.active {
+    display: none!important;
+}
+.wall-area .history-post .post-item .user-post .tool-bar {
+    position: relative;
+}
+.wall-area .history-post .post-item .user-post .tool-bar ul li:last-child {
+    width: 100%;
+    top: 7px;
+    z-index: 9;
+    position: relative;
+}
+.wall-area .history-post .post-item .user-post .tool-bar ul li:last-child .addthis_inline_share_toolbox {
+    bottom: 0!important;
+    right: 0!important;
+    margin-right: 0!important;
+}
+.edit-about p span {
+    font-size: 15px;
+}
+#setabout {
+    font-size: 12px;
+}
+nav .items ul li .info {
+    width: 10em;
+    position: relative;
+}
+nav .items ul li .info p {
+    top: 47%;
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+.slider-row.profile.my-center div.video {} .video-container.my-text-center .slider-row.profile.my-center,
+.video-container1.my-text-center .slider-row.profile.my-center {
+    margin: 1em 0px 3em 70px;
+}
+.btn-edit-response {
+    right: -7px;
+}
+@media(max-width:1360px) {
+    .super-container .inner .main-inner-container.bands-video {
+        width: 100%;
+        padding: 1em;
+    }
+    .bands-video .video-area {
+        width: 840px;
+    }
+    .bands-video .video-area .video-content {
+        width: 100%;
+    }
+    .bands-video .video-area .video-info-content {
+        width: 100%;
+    }
+    .bands-video .video-area .video-comment-content {
+        width: 100%;
+        height: auto;
+    }
+    .top-profile-menu {
+        width: 100%;
+    }
+    .top-profile-menu ul {
+        margin-left: 0;
+    }
+    .btn-green.dark {
+        margin-right: 1em;
+    }
+}
+@media(max-width:1320px) {
+    .slider-row {
+        width: 100%;
+    }
+    .slider-row.profile.my-center div.video {
+        margin: 0em 1em 2em 1em;
+    }
+    .bands-video .video-area {
+        float: left;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+    .bands-video .related-area {
+        display: none;
+    }
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .text-area {
+        width: 100%;
+    }
+    .update-background.active img {
+        margin: 0!important;
+    }
+    .background-legend,
+    .update-background.active p {
+        display: none!important;
+    }
+    .login-box.left,
+    .login-box.right {
+        float: none!important;
+        margin: 0 auto;
+    }
+    .container-medium .login-box h3 {
+        width: 100%;
+        float: left;
+        margin-top: 1em;
+    }
+    .container-medium .login-box.right h3 {
+        margin-top: 3em;
+    }
+    .container-medium > h3 {
+        margin-top: -2em;
+    }
+    .container-medium .login-box.right {
+        width: 23em;
+        padding: 0;
+    }
+    .container-medium .login-box.left {
+        width: 23em;
+        padding: 0;
+    }
+    .container-medium .login-box.right input {
+        height: 3.5em;
+    }
+    .container-medium .login-box.right .btn-purple {
+        height: 3em;
+    }
+    .login-box.left .social-container .social-inner-container {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+    .container-medium .login-box h3 {
+        font-size: 14px;
+    }
+    .container-medium {
+        top: 50%;
+        width: 100%;
+    }
+    .dropwall {
+        left: 9px;
+    }
+    .select2-container,
+    .select2-search__field {
+        width: 100%!important;
+    }
+}
+@media(max-width:1160px) {
+    .slider-row.profile.my-center div.video .slider-video {
+        height: 22em!important;
+    }
+    .video-container {
+        width: 100%!important;
+    }
+    .slider-row3.profile,
+    .slider-row.profile {} .uploadmore {
+        height: 20em;
+    }
+    .slider-row.profile.my-center div.video {
+        float: none;
+        margin: 0em 2em 2em 2em;
+    }
+    .slider-row.profile.my-center div.video {
+        width: 25em;
+    }
+    .bands-video .video-area {
+        width: 100%;
+    }
+    .video-comment-content .comment-area .text-area {
+        width: 100%;
+        margin-top: 1em;
+    }
+    ul.sponsors-list li {
+        width: 90px;
+    }
+    .container-medium > h3 {
+        margin-bottom: 3em;
+    }
+    .top-profile-menu ul.my-left {
+        float: right;
+    }
+    .edit-avatar.image {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:900px) {
+    .upload-li {
+        height: 17.5em!important;
+    }
+    .video.uploadmore {
+        width: 100%;
+        height: 16em;
+    }
+    .container-video,
+    .container-video ul.list-container {
+        padding: 0!important;
+    }
+    .container-video ul.list-container.home-band {
+        padding: 5em!important;
+    }
+    .container-video ul li {
+        width: 320px;
+        height: 300px;
+    }
+    .my-jumbotron.img-home {
+        background: url(../../images/resources/img-home-mobile.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    .content {
+        width: 100%;
+    }
+    .overlay,
+    .overlay-img {
+        margin-top: 0;
+    }
+    .wall-area .history-post .post-item .user-post .media-post {
+        height: auto;
+    }
+    .slider-row.profile.my-center div.video .slider-video {
+        height: 272px!important;
+    }
+    section.home-section-2 {
+        background: url(../../images/resources/banners3-mobile.png)no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg-photo-2 {
+        background: url(../../images/resources/banners_B-mobile.png)no-repeat;
+        background-size: cover;
+    }
+    .bg-photo {
+        background: url(../../images/resources/banners_A-mobile.png)no-repeat;
+        background-size: cover;
+    }
+    .bg-photo-3 {
+        background: url(../../images/resources/banners_D-mobile.png)no-repeat;
+        background-size: cover;
+    }
+    .slider-type-2 .image-1 {
+        background: url(../../images/resources/portada-mobile.png);
+        background-size: cover;
+    }
+    .slider-type-2 .image-2 {
+        background: url(../../images/resources/battles-mobile.png)no-repeat;
+        background-size: cover;
+    }
+    .slider-type-2 .image-3 {
+        background: url(../../images/resources/ranking-mobile.png)no-repeat;
+        background-size: cover;
+    }
+    .update-background.active {
+        border: 1px solid #afa2a2;
+    }
+    section.login.bands {
+        background: url(../../images/resources/banners_E-mobile.png)no-repeat!important;
+        background-size: cover;
+    }
+    .modal-notificacion .modal-area {
+        width: 90%;
+    }
+    /*nav ul{margin-right:-1em!important;}*/
+    
+    .mobile_not {
+        margin-right: -1em!important;
+    }
+    nav .items ul li ul.user-sub-menu {
+        top: 3em;
+        min-width: 9em;
+    }
+    nav .items ul li ul.user-sub-menu li {
+        padding: 0.5em;
+    }
+    .chart-ylmm {
+        padding: 0 1em;
+    }
+    .chart-ylmm .container-chart .section .info {
+        display: none;
+    }
+    .chart-ylmm .container-chart .section .main {
+        width: 78%;
+        padding-left: 1.2em;
+    }
+    .sponsors .logos {
+        width: 100%;
+    }
+    .top-profile-menu {
+        width: 100%;
+        margin: 0;
+    }
+    .top-profile-menu ul {
+        margin-left: 0;
+    }
+    .top-profile-menu ul li a {
+        font-size: 10px;
+    }
+    .top-profile-menu ul li a.active {
+        line-height: 24px;
+    }
+    .btn-green.dark {
+        margin-right: 1em;
+    }
+    .band-name-type-1 {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        margin: 0!important;
+        padding-top: 1.5em;
+    }
+    .yourfavorite {
+        font-size: 27px;
+    }
+    .wall-area {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .wall-area .main-post .post-area .input-area textarea {
+        width: 100%;
+    }
+    .wall-container .inner-container {
+        width: 100%;
+        padding: 1.5em 10px;
+    }
+    .update-background {
+        top: 1em;
+        left: 1em;
+    }
+    .avatar-profile {
+        transform: translate(0%, -26%);
+        position: absolute;
+    }
+    .video-area {
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 2em;
+        margin-left: 0!important;
+    }
+    .video-area .related-area {
+        width: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    .video-area .related-area ul li .info h3 {
+        font-size: 12px;
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .video-area .related-area ul li a span.thrumb {
+        width: 130px;
+    }
+    .btn-green.dark {
+        font-size: 12px;
+    }
+    .slider-row.profile.my-center div.video {
+        width: 20em;
+    }
+    .super-container .inner .main-inner-container.bands-video {
+        padding: 0.5em;
+    }
+    .slider-row.profile.my-center div.video {
+        float: none;
+        margin: 3em auto;
+    }
+    section {
+        height: inherit;
+        padding: 1em;
+    }
+    section.home-section-1 br {
+        display: none;
+    }
+    section.home-section-1 ul {
+        width: 100%;
+        display: block;
+    }
+    section.home-section-1 ul li {
+        margin: 0 0 1em 0!important;
+    }
+    section.home-section-1 img {
+        width: 8em;
+    }
+    section.home-section-2 {
+        position: relative;
+        padding: 1em;
+    }
+    section.home-section-2 .content-2 {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    .btn-white-2 {
+        width: 60%;
+    }
+    section.home-section-2 h1 {
+        font-size: 14px;
+        line-height: 34px;
+        letter-spacing: 7px;
+        margin-bottom: 1em;
+    }
+    section.home-section-2 p {
+        font-size: 11px;
+        line-height: 27px;
+        margin-bottom: 2em;
+        margin-top: 4em;
+    }
+    .slider-tittle {
+        font-size: 16px;
+    }
+    .my-jumbotron .content {
+        margin-top: 9em!important;
+    }
+    .my-jumbotron .content img {
+        width: 90%;
+    }
+    .my-jumbotron .content h2 {
+        font-size: 15px!important;
+        line-height: 22px;
+        margin-top: 0em;
+    }
+    .my-jumbotron .content ul {
+        width: 100%;
+        display: block;
+        margin-top: 4em;
+        max-width: 24em;
+        float: none;
+        margin: 0 auto;
+    }
+    .content ul.my-inline li {
+        height: auto;
+        margin-top: 1em;
+    }
+    .my-jumbotron .content ul li img {
+        width: 45%;
+    }
+    .slider-tittle {
+        text-indent: 0;
+        text-align: center;
+    }
+    .mobile-right-menu.active {
+        display: block!important;
+        position: fixed;
+    }
+    .avatar-profile {
+        top: 16.4em;
+        left: 14px;
+        width: 5em;
+        height: 5em;
+        border: 4px solid #fff;
+    }
+    .container-follow,
+    .container-follow.active,
+    .artist-song span,
+    .artist-name span {
+        display: block!important;
+    }
+    .btn-green.dark.my-right.btn-sosfan {
+        display: none;
+    }
+    .btn-green.dark.my-right.btn-sosfan.active {
+        display: none!important;
+    }
+    .bands-video .video-area .video-content {
+        height: 270px;
+    }
+    .search-area .buscador .user-sub-menu.buscador li {
+        height: 5em;
+        min-height: 5em;
+        padding: 1em;
+        background: white;
+    }
+    .video.row {
+        height: auto;
+        margin: 1em auto 0em auto!important;
+    }
+    .post-new-coment a {
+        margin-right: 0px;
+    }
+    .wall-area .history-post .post-item .user-post .list-comment ul li .avatar {
+        width: 40px;
+        height: 40px;
+    }
+    footer {
+        margin-top: 3em;
+    }
+    .form-login {
+        width: 100%!important;
+    }
+    .select2-container--default .select2-selection--multiple {
+        width: 100%!important;
+    }
+    .muro-name-band {
+        margin-top: 12em!important;
+    }
+    .comment-like {
+        font-size: 12px;
+        float: right;
+        line-height: 20px;
+    }
+    .btn-edit-post {
+        margin-right: 0em;
+    }
+    .form-login.registro.my-center {
+        padding-top: 44px;
+    }
+    .responsive-register {
+        display: block!important;
+    }
+    .mobile-submenu {
+        display: block;
+    }
+    .in-left {
+        display: none;
+    }
+    .stats.cf.follow-container {
+        margin-right: 43px;
+    }
+    .update-background {
+        height: 2.5em;
+    }
+    .band-name-type-1 {
+        left: 106px;
+        width: auto;
+        padding-top: 0px;
+        transform: translate(0%, 9px);
+        font-size: 15px;
+    }
+    .stats.cf.follow-container.orderby {
+        display: block!important;
+    }
+    ul.sponsors-list {
+        margin-top: 20%;
+    }
+    .stat {
+        width: auto;
+        float: left;
+        color: #4c4c4c;
+        font-size: 9px;
+        line-height: 17px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #fff;
+        position: relative;
+        padding: 1.2em 1em;
+    }
+    div.upload-more {
+        width: 7em;
+        height: 7em;
+    }
+    .img-container {
+        padding: 0.2em;
+        height: auto;
+        float: left;
+    }
+    .wall-area .main-post .post-area .tool-bar {
+        padding: 1px 9px!important;
+    }
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .tool-bar ul li {
+        margin: 0 0!important;
+        width: 100%;
+        height: 100%;
+        padding: 1px 1px;
+    }
+    #name_edit {
+        left: 0px;
+        width: 100%;
+    }
+    #name_edit .input-type-1 {
+        width: 135px!important;
+        height: 34px;
+        min-width: 0px;
+        background: black;
+        font-size: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(74%, 0%);
+    }
+    #name_edit .btn-white-2:hover,
+    #name_edit .btn-white-2 {
+        font-size: 9px!important;
+        left: 18em;
+        top: 50%;
+        transform: translate(-86%, 0%);
+        letter-spacing: 1px;
+        height: 32px;
+        width: 71px!important;
+    }
+    .slider-row.profile.my-center .chart-ylmm .video.row {
+        height: auto;
+        margin: 1em auto 0em auto!important;
+    }
+    .media-post-content {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    .btn-edit-response {
+        right: 0px;
+    }
+}
+@media(max-width:650px) {
+    .chart-ylmm .container-chart .section .main .artist-song h2 {
+        font-size: 15px;
+    }
+    .chart-ylmm .container-chart .section .main .artist-name p {
+        font-size: 12px;
+    }
+    .chart-ylmm .container-chart .header span {
+        font-size: 15px;
+    }
+    .chart-ylmm .container-chart .section .vote .artist-vote-btn button {
+        width: 100%;
+        font-size: 10px;
+    }
+    .sponsors .logos .logo {} .container-chart-clasificados ul li:last-child div h2,
+    .clasificados div h2 {
+        font-size: 20px;
+    }
+    .chart-ylmm .container-chart .section .vote .artist-vote-number h2 {
+        font-size: 12px;
+    }
+    .chart-ylmm .container-chart .section .vote .artist-vote-description h4 {
+        font-size: 9px;
+    }
+    .container-chart-clasificados ul li div h1 {
+        font-size: 12px;
+    }
+    .chart-ylmm .container-chart .header span {
+        font-size: 15px;
+    }
+    .buscador .search-list ul li .data-area {
+        width: auto;
+    }
+    .buscador .search-list ul li .data-area h2 {
+        font-size: 12px;
+    }
+    .buscador .search-list ul li .data-area p {
+        font-size: 10px;
+    }
+    .container-medium .login-box.right {
+        width: 18em;
+        padding: 0;
+    }
+    .container-medium .login-box.left {
+        width: auto;
+        padding: 0;
+    }
+    .container-register {
+        width: 100%;
+        max-width: 23em;
+    }
+    .slider-row.profile.my-center div.video {
+        margin-bottom: 7em;
+    }
+    .btn-green.dark {
+        font-size: 9px;
+        margin-top: 1.8em;
+    }
+    .slider-row.profile.my-center div.video {
+        float: none;
+        margin: 7em auto 0 auto;
+    }
+    .at-share-btn-elements {
+        right: 0;
+        bottom: -60px;
+        position: absolute;
+        display: inline-flex;
+    }
+    .video-container.addVideos {
+        padding-bottom: 6em;
+    }
+    .addmember_overlay .container,
+    .overlay .container {
+        width: 100%;
+        padding: 1.5em;
+    }
+    .input-type-1 {
+        width: 100%!important;
+        height: 35px;
+        font-size: 13px;
+        min-width: inherit;
+    }
+    .addmember_overlay.active,
+    .overlay.active {
+        padding: 1em;
+    }
+    .btn-green-1 {
+        width: 100%!important;
+    }
+    .img-yt {
+        width: 100%!important;
+        height: 230px!important;
+    }
+    body > div:nth-child(4) > div > div > div:nth-child(3) {
+        width: 70%!important;
+        margin: 1em auto 3em auto;
+    }
+    body > div:nth-child(4) > div > div > div:nth-child(3) span {
+        font-size: 12px;
+    }
+    .social-container.integrantes {
+        font-size: 12px;
+        margin: 1.5em 0em 1.5em 0em;
+    }
+    .inner h4 {
+        font-size: 12px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .container-medium > h3 {
+        margin-bottom: 0;
+    }
+    .social-container .btn-social span {
+        font-size: 13px;
+    }
+    .container-medium {
+        padding: 2em;
+    }
+    .bottom-back {
+        margin-top: 1em;
+    }
+    .bottom-back a {
+        font-size: 16px;
+    }
+    .slider-type-2 .image-1 {
+        top: 0;
+        height: 100%;
+    }
+    .wall-area .main-post .post-area .user-area .avatar {
+        top: -23px;
+        left: 94%;
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+    .wall-area .main-post .post-area .user-area {
+        width: 0;
+        display: none;
+    }
+    nav .items ul.main-menu.mobile li {
+        padding: 11px 13px 8px 13px;
+    }
+    .wall-area .main-post .post-area .input-area {
+        width: 100%;
+    }
+    .wall-area .history-post .post-item .user-area .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.8em;
+    }
+    .wall-area .history-post .post-item .user-area .data h1 a {
+        font-size: 12px!important;
+    }
+    .wall-area .history-post .post-item .user-area .data p {
+        font-size: 12px;
+    }
+    .wall-area .history-post .post-item .user-post .post-content span {
+        font-size: 12px;
+    }
+    .wall-area .history-post .post-item .user-post .tool-bar ul li {
+        width: 20px;
+        height: 20px;
+    }
+    .wall-area .history-post .post-item .user-post .tool-bar ul {
+        padding: 0 8px;
+    }
+    .wall-area .history-post .post-item .user-post .tool-bar ul li.btn-edit-post {
+        width: 80px;
+        height: 25px;
+    }
+    .wall-area .history-post .post-item .user-post .tool-bar ul li.btn-edit-post a {
+        width: 100%!important;
+    }
+    .wall-area .history-post .post-item .user-post .tool-bar ul li a {} .wall-area .history-post .post-item .user-post .tool-bar ul li a.comment-band {
+        line-height: 24px;
+    }
+    .sponsors .logos {
+        top: 40%;
+    }
+    .sponsors .logos h2 {
+        margin-bottom: 1em;
+        margin-top: 17%;
+    }
+    ul.sponsors-list li {
+        margin: 5px;
+    }
+    .container-medium {
+        top: 50%;
+    }
+    .social-container.bands-informacion {
+        padding: 0 1em;
+    }
+    .social-container.bands-informacion .create-coment {
+        width: 100%!important;
+        height: 10.5em!important;
+    }
+    .social-container .create-coment button {
+      /*  left: 50%;
+        transform: translateX(-50%);*/
+    }
+    footer p {
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .container-medium .login-box.left {} nav .logo {
+        width: 170px;
+    }
+    nav .logo a .img-logo {
+        width: 100%!important;
+        height: 48px!important;
+        margin-top: 5px;
+    }
+    .messages .container,
+    .overlay-img .container,
+    .share-overlay .container {
+        width: 90%!important;
+    }
+    .container-chart .header h2 {
+        text-align: center;
+        padding-top: 0.5em;
+    }
+    .chart-ylmm .container-chart .header {
+        padding-top: 0;
+    }
+    .integrante,
+    .contenedor {
+        width: 100%!important;
+    }
+    .sponsors .logos ul.sponsors-list li:first-child a .logo {
+        margin-left: 0!important;
+    }
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .text-area {
+        width: 84.5%!important;
+    }
+
+    .wall-area .history-post .post-item .user-post .list-comment {
+        width: 100%;
+    }
+    .btn-edit-member {
+        right: 0;
+        float: right;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 10px;
+        letter-spacing: 1px;
+        background: -webkit-linear-gradient(-45deg, #e42693, #6e39a6);
+        background: -ms-linear-gradient(-45deg, #e42693, #6e39a6);
+        font-weight: bold;
+        text-transform: capitalize;
+        padding: 0.4em 1em 0.4em 1em;
+    }
+    #editRolesForm,
+    #EditGenresForm {
+        padding: 9px 12px;
+        width: auto!important;
+        margin-bottom: 3em;
+    }
+    .text-band {
+        margin-bottom: 2em;
+    }
+    .edit-about p span {
+        font-size: 15px;
+    }
+    #setabout {
+        font-size: 12px;
+    }
+    .video-container.my-text-center .slider-row.profile.my-center,
+    .video-container1.my-text-center .slider-row.profile.my-center {
+        margin: 0 auto 2em -10px;
+    }
+    .video-container.my-text-center .slider-row.profile.my-center.content-llaves {
+        margin: 0 auto 2em 2px!important;
+    }
+    .video-comment-content .comment-area .text-area {
+        width: 77%;
+        margin-top: 0em;
+    }
+    .share-overlay .container .addthis_inline_share_toolbox {
+        left: 50%;
+        top: 50%!important;
+        position: absolute!important;
+        transform: translate(-70%, -50%);
+        width: 100%;
+    }
+    .container-video ul.list-container.home-band {
+        padding: 0px!important;
+    }
+    .btn-edit-response {
+        right: 0px;
+    }
+}
+@media(max-width:450px) {
+    .container-medium .login-box.right {
+        margin-top: 16em;
+        width: 100%;
+    }
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .text-area {
+        width: 83.5%!important;
+    }
+    .btn-edit-response {
+        right: -6px;
+    }
+}
+@media(max-width:380px) {
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .text-area {
+        width: 81.5%!important;
+    }
+}
+@media(max-width:350px) {
+    .wall-area .history-post .post-item .user-post .list-comment ul li.comment-post-area .text-area {
+        width: 77.3%!important;
+    }
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>YLMM</title>
+
+  <link rel="icon" type="image/png" href="../../images/favicon.ico" sizes="32x32" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/select2.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link rel="stylesheet" type="text/css" href="../../css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../../css/slick-theme.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/general.css">
+  <link rel="stylesheet" type="text/css" href="../../css/home_usuario.css">
+  <link rel="stylesheet" type="text/css" href="../../css/login.css">
+  <link rel="stylesheet" type="text/css" href="../../css/my-index.css">
+  <link rel="stylesheet" type="text/css" href="../../css/my-login.css">
+  <link rel="stylesheet" type="text/css" href="../../css/registro.css">
+  <link rel="stylesheet" type="text/css" href="../../css/video.css">
+  <link rel="stylesheet" type="text/css" href="../../css/ylmm.css">
+  <link rel="stylesheet" type="text/css" href="../../css/components.css">
+  <link rel="stylesheet" type="text/css" href="../../css/general.css">
+  <link rel="stylesheet" type="text/css" href="../../css/bandwall.css">
+  <link rel="stylesheet" type="text/css" href="../../css/walls.css">
+  <link rel="stylesheet" type="text/css" href="../../css/plantilla.css">
+  <link rel="stylesheet" type="text/css" href="../../css/plantilla2.css">
+  <link rel="stylesheet" type="text/css" href="../../css/loader.css">
+  <link rel="stylesheet" type="text/css" href="../../css/responsive-menu.css">
+  <link rel="stylesheet" type="text/css" href="../../css/ylmm-media.css">
+  <link rel="stylesheet" type="text/css" href="css/messages.css">
+
+  <style type="text/css">
+    
+    @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+      
+      nav .items ul li:nth-child(2) ul.user-sub-menu {
+        margin-top: 6.5px !important;
+      }
+      
+    }
+
+  </style>
+
+  <script type="text/javascript">
+    
+
+  function resizeImageToArea($imagen) {
+
+          var imgWidth = $imagen.prop('width')
+          ,   imgHieght = $imagen.prop('height');
+      
+          (imgWidth >= imgHieght) ?
+            $imagen.css({'height': '100%','width': 'auto'}) :
+            $imagen.css({'height': 'auto','width': '100%'});
+  }
+
+
+  </script>
+
+  <script src="../../js/jquery-2.2.4.min.js" ></script>
+  <script type="text/javascript" src="../../js/slick.min.js"></script>
+
+</head>
+
+<body class="body-gray">
+
+  <!-- Messages Area-->
+
+  <div class="messages" id="msg1">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">¡Tu email ha sido validado exitósamente!</p>
+      <div class="message-image">
+        <img  src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg2">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Elegí una imagen que tenga como mínimo 1024 px de ancho.</p>
+      <div class="message-image">
+        <img src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="messages" id="msg3">
+    <div class="container">
+      <div class="close-messages"></div>
+      <p style="text-align: center;">Empezá a explorar</p>
+      <div class="message-image">
+        <img  src="../../images/resources/logo_sm.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages Area-->
+
+  <!-- Social Network Icons -->
+
+  <div class="share-overlay">
+    <div class="container">
+      <div class="close-share"></div>
+      <div class="addthis_inline_share_toolbox active"></div>
+    </div>
+  </div>
+
+  <!-- Social Network Icons -->
+
+ <!-- Nav area -->
+  <nav></nav>
+
+  <div class="top-sub-menu">
+    <div class="top-sub-menu-container">
+      <ul>
+        <li><a href="/">Login</a></li>
+        <li><a class="btn-green" href="/registro">Registro</a></li>
+      </ul>
+    </div>
+   </div>
+
+
+   <div class="modal-search">
+    <div class="search-area">
+      <form>
+        <input id="input-buscador-mobile" type="text" name="search" placeholder="Buscar en YLMM">
+         <div class="buscador" style="box-shadow: 0px 2px 1px 0px transparent!important; border-top: 1px solid transparent;">
+              <ul class="user-sub-menu buscador" style="box-shadow: 0px 2px 1px 0px transparent!important; border-top: 1px solid transparent;"></ul>
+          </div>    
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-notificacion">
+    <div class="modal-area">
+      <div class="header">
+        <p>Notificaciones</p>
+      </div>
+      <div class="notification-list">
+        <ul>
+          <li><a href=""></a></li>          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <ul class="mobile-right-menu">
+    <li><a id="wall_link" href=""><div id="user_name"></div></a></li>
+    <li><a id="optionmenumobile"></a></li>
+    <li class="search" ><a href="javascript:;"><div>Buscador</div></a></li>
+    <li><a href="/"><div>Inicio</div></a></li>
+    <li><a href="/battles"><div>Concurso</div></a></li>
+    <li><a href="/logout"><div>Cerrar Sesión</div></a></li>
+  </ul>
+
+
+<!-- Nav area -->
+
+<!--Container area to append-->
+<div class="container" id="append_container">
+
+</div>
+<!--Container area to append-->
+
+
+<!--
+  <div class="top-profile-menu" >
+
+  <div class="twitter-widget">
+
+    <div class="stats cf in-left" style="float: left;">
+
+      <a href="/wall?id={{$user->id}}" class="stat" >MURO</a>
+
+      <?php if ($user->user_level == '1' || $user->user_level == '4') { ?>
+        <a href="/wall/yourfavorites?id={{$user->id}}" class="stat" >MI MÚSICA FAVORITA</a>
+      <?php } ?>
+
+      
+       <div class="dropwall">
+          <ul>
+            <li><a href="/users/wall?id={{$user->id}}">MI MURO</a></li>
+            <?php if (!is_null($user->id_band)) { ?>
+              <li><a href="/bands/comments?id={{$user->id_band}}">MURO DE BANDA</a></li>
+            <?php } ?>
+          </ul>
+        </div>
+      
+      <?php if (!is_null($user->id_musician)) { ?>
+        
+        <a href="/musician/videos?id={{$user->id}}&idmusic={{$user->id_musician}}" class="stat" >MÚSICA</a>
+
+        <a href="/musician/about?id={{$user->id}}&idmusic={{$user->id_musician}}" class="stat">INFORMACIÓN</a>
+      <?php } ?> 
+    </div>
+
+    <div class="stats cf follow-container" >
+      <?php if (!is_null($user->id_musician)) { ?>
+        <?php $musician = DB::table('musicians')
+                      ->where('id', $user->id_musician)
+                      ->first();
+              $favorites = DB::table('favorites')
+                       ->where('id_user', $user->id)
+                       ->get(); 
+              $following = count($favorites);
+              $followers = $musician->favorite + $user->followers;
+        ?>
+
+        <a href="/followers?id={{$user->id}}" class="stat" id="count-followers">FOLLOWERS: {{$followers}}</a>
+
+        <a href="/followings?id={{$user->id}}" class="stat following" id="count-following">FOLLOWING: {{$following}}</a>
+
+        <?php if (Auth::user()->id_musician != $user->id_musician) { 
+
+          $favorites = DB::table('favorites')
+                    ->where('id_user', Auth::user()->id)
+                    ->where('id_musician', $user->id_musician)
+                    ->first();
+
+              if (is_null($favorites)) { ?>
+              
+                  <a href="javascript:;" onclick="makefanmusician({{$user->id_musician}});" class="btn-green dark my-right btn-sosfan">FOLLOW</a>
+              
+              <?php }else { ?> 
+            
+                  <a href="javascript:;" onclick="makefanmusician({{$user->id_musician}});" class="btn-green dark my-right btn-sosfan active">UNFOLLOW</a>
+        
+              <?php } ?>
+        
+        <?php } ?>
+
+      <?php } ?>
+
+      <?php if (Auth::user()->id != $user->id && $user->user_level == '4') {
+
+          $followings = DB::table('favorites')
+          ->where('id_user', $user->id)
+          ->get();
+
+          $following = count($followings); ?>
+
+          <a href="/followers?id={{$user->id}}" class="stat" id="count-followers">FOLLOWERS: {{$user->followers}}</a>
+
+          <a href="/followings?id={{$user->id}}" class="stat following" id="count-following">FOLLOWING: {{$following}}</a>
+
+          <?php if (Auth::user()->id != $user->id && $user->user_level == '4') {
+
+            $favorite = DB::table('favorites')
+            ->where('id_user', Auth::user()->id)
+            ->where('id_fan', $user->id)
+            ->first();
+
+            if (is_null($favorite)) { ?>
+
+              <a href="javascript:;" onclick="addfollower({{$user->id}});" class="btn-green dark my-right btn-sosfan">FOLLOW</a>
+
+            <?php }else { ?> 
+
+              <a href="javascript:;" onclick="addfollower({{$user->id}});" class="btn-green dark my-right btn-sosfan active">UNFOLLOW</a>
+
+            <?php } ?>
+
+          <?php } ?>
+
+      <?php } ?>
+
+      <?php if (Auth::user()->id == $user->id && is_null(Auth::user()->id_musician)) {
+
+          $followings = DB::table('favorites')
+          ->where('id_user', Auth::user()->id)
+          ->get();
+
+          $following = count($followings); ?>
+
+          <a href="/followers?id={{$user->id}}" class="stat" id="count-followers">FOLLOWERS: {{Auth::user()->followers}}</a>
+
+          <a href="/followings?id={{$user->id}}" class="stat following" id="count-following">FOLLOWING: {{$following}}</a>
+
+      <?php } ?>
+    </div>
+
+    <div class="mobile-submenu">
+    </div>
+
+     <ul class="submenu-menu-mobile">
+          <li><a href="/users/wall?id={{$user->id}}">MURO</a></li>
+          <?php if (!is_null($user->id_band)) { ?>
+          <li><a href="/bands/comments?id={{$user->id_band}}">MURO DE BANDA</a></li>
+          <?php } ?>
+          <?php if ($user->user_level == '1' || $user->user_level == '4') { ?>
+          <li><a href="/wall/yourfavorites?id={{$user->id}}">MI MÚSICA FAVORITA</a></li>
+          <?php }else{ ?>
+          <li><a href="/musician/videos?id={{$user->id}}&idmusic={{$user->id_musician}}">MÚSICA</a></li>
+          <li><a href="/musician/about?id={{$user->id}}&idmusic={{$user->id_musician}}">INFORMACIÓN</a></li>
+          <?php } ?>
+      </ul>  
+
+  </div>
+
+    <a href="javascript:;" class="my-center avatar-profile">
+      <div class="edit-avatar">
+      <?php if (Auth::user()->id != $user->id) { ?>
+        <img  id="img-avatar" onload="resizeImageToArea($('img#img-avatar'))" src="{{ $user->profile_pic }} " alt="" style="cursor: default;">
+      <?php } ?>
+
+        <?php if (Auth::user()->id == $user->id) { ?>
+          <img  id="img-avatar" onload="resizeImageToArea($('img#img-avatar'))" src="{{ $user->profile_pic }} " alt="">
+            <div class="container-avatar">
+              <img class="edit-avatar image" src="../../images/white_camara.png">
+            </div>
+          <?php } ?>
+            <form id="profile-pic" method="POST" action="/users/update_profile" enctype="multipart/form-data">
+              {{ csrf_field() }}
+                <input class="img-coordenadasY-avatar" type="text" name="back_Y" style="display: none;">
+                <input type="file" name="picture-avatar" class="file-avatar" style="display: none;">
+            </form>
+            <form id="background-pic" method="POST" action="/users/update_background" enctype="multipart/form-data">
+              {{ csrf_field() }}
+                <input class="img-coordenadasY-back" type="text" name="back_Y" style="display: none;">
+                <input class="img-coordenadasX-back" type="text" name="back_X" style="display: none;">
+                <input type="file" name="picture-background" class="file-background" style="display: none;">
+            </form>
+      </div>
+    </a>
+  </div>
+
+  <?php if (Auth::user()->id == $user->id) { ?>
+    <input type="hidden" name="id_confirmation" id="id_confirmation" value="YES">
+  <?php } ?>
+-->  
+<!-- Nuevo Footer -->
+<footer></footer>
+
+<script type="text/javascript" src="../../js/walljs.js" ></script> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d14bef0f66d9fe"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script type="text/javascript" src="../../js/lib.js"></script> 
+<script type="text/javascript" src="js/userwall.js"></script> 
+
+
+</body>
+</html>

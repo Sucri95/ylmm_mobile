@@ -1,0 +1,217 @@
+  
+        .user-name-area {
+            position: relative;
+        }
+        .edit-avatar-profile {
+            top: 11%;
+            left: 62%;
+            width: 2em;
+            height: 2em;
+            line-height: 33px;
+            border-radius: 50%;
+            background: rgba(34, 31, 31, 0.73);
+            transform: translate(-50%, -138%);
+            position: absolute;
+            text-align: center;
+        }
+        .custom-camara {
+            color: #fff;
+            font-size: 14px;
+        }
+        /*Tags Css*/
+        
+        .post-relative {
+            position: relative;
+        }
+        .li-font {
+            font-size: 10px;
+            padding: 9.5px;
+        }
+        .contactList {
+            /* bottom: 0;*/
+            
+            left: 0;
+            width: 100%;
+            height: auto;
+            display: none;
+            /*
+          transform: translateY(60px);*/
+            
+            position: absolute;
+            background: white;
+            z-index: 99;
+        }
+        .contactList.active {
+            display: block;
+        }
+
+        .icon-play1{
+            top: 29%;
+            right: 12.5%;
+            width: 30px;
+            height: 30px;
+            background: url(../../images/play1.png)no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+        .to-left{
+            position: relative;
+        }
+        .top-toolbar{
+            height: 4.1em!important;
+        }
+        .search-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 7px;
+        }
+        .search-info-div {
+            margin-top: 6px;
+        }
+        .showbox {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 5%;
+        }
+        .loader {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            display: block;
+            padding-top: 100%;
+        }
+        .circular-loader {
+            -webkit-animation: rotate 2s linear infinite;
+            animation: rotate 2s linear infinite;
+            height: 100%;
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+        .loader-path {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -10;
+            -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            stroke-linecap: round;
+        }
+        @keyframes rotate {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35px;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124px;
+            }
+        }
+        @keyframes color {
+            100%, 0% {
+                stroke: #e42693;
+            }
+            40% {
+                stroke: #6e39a6;
+            }
+            66% {
+                stroke: #e42693;
+            }
+            80%,
+            90% {
+                stroke: #6e39a6;
+            }
+        }
+        @-webkit-keyframes rotate {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35px;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124px;
+            }
+        }
+        @-webkit-keyframes color {
+            100%, 0% {
+                stroke: #e42693;
+            }
+            40% {
+                stroke: #6e39a6;
+            }
+            66% {
+                stroke: #e42693;
+            }
+            80%,
+            90% {
+                stroke: #6e39a6;
+            }
+        }
+        .input-text {
+            height: auto;
+            padding: 6px;
+            border: 1px solid #ebebe7;
+            background: white;
+        }
+
+
+
+         .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .basic-result{
+        float: left;
+        position: absolute;
+        z-index: 99;
+        bottom: 0;
+    }
